@@ -2,6 +2,10 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+p {
+  margin: 0 0 0px;
+}
+
 .banner {
   color: white;
   height: 100vh;
@@ -16,10 +20,16 @@
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
   color: #F5003E;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 70px;
 }
 .banner p {
   font-size: 20px;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
+}
+
+.title {
+  letter-spacing: 2px; color: #F5003E
 }
