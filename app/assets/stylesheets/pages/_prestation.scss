@@ -51,10 +51,33 @@
   }
 }
 
-.img {
-  display: flex;
-  align-items: center;
-  .img2 {
-    margin-left: 100px;
+.map-container {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   height: 200px;
+}
+
+#text-map {
+  position: absolute;
+  width: 715px;
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 752px) {
+  .map-container img {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #text-map {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 100%;
+  text-align: center;
   }
 }
