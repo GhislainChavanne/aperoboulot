@@ -12,33 +12,6 @@
   }
 }
 
-.fixed {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.text-right {
-  h2 {
-  font-family: 'Kaushan Script', cursive;
-  color: black
-  }
-  margin-left: 40px;
-  text-align: justify;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 60%;
-}
-
-
-
-@media screen and (max-width: 895px) {
-  .fixed img {
-  display: none;
-  }
-}
 
 @media screen and (max-width: 895px) {
   .text-right {
@@ -64,7 +37,6 @@
   font-family: 'Kaushan Script', cursive;
   color: black;
 }
-
 
 
 @media screen and (max-width: 752px) {

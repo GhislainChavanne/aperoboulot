@@ -27,8 +27,38 @@
 .blue {
   background: #e8ecf0;
   margin-top: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+.fixed {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  img {
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.text-right {
+  h2 {
+  font-family: 'Kaushan Script', cursive;
+  color: black
+  }
+  margin-left: 40px;
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .line-orange {
+  position: absolute;
+  opacity: 0.6;
+  }
 }
 
 .orange {
