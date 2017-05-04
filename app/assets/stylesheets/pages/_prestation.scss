@@ -1,0 +1,60 @@
+.card {
+  img {
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  h5 {
+    font-weight: bolder;
+    color: black;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.fixed {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.text-right {
+  h2 {
+  font-family: 'Kaushan Script', cursive;
+  color: black
+  }
+  margin-left: 40px;
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 60%;
+}
+
+
+
+@media screen and (max-width: 895px) {
+  .fixed img {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .text-right {
+  margin-left: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  }
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  .img2 {
+    margin-left: 100px;
+  }
+}
