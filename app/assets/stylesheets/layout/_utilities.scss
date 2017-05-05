@@ -104,17 +104,19 @@ h5 {
   }
 }
 
+
 .form {
   width: 70%;
   margin: auto;
   input {
     border-radius: 25px;
-  }
-  label {
   font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 3px;
     line-height: 140%;
     font-size: 17px;
+  }
+  label {
+    display: none;
   }
 }
 
