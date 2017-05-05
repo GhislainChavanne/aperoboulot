@@ -23,3 +23,24 @@
   }
 }
 
+.partners {
+  p {
+    width: 65%;
+    margin-top: 20px;
+  }
+  img {
+    margin-top: -20px;
+  }
+}
+
+
+@media screen and (max-width: 723px) {
+  .partners img {
+  display: none;
+  }
+}
+@media screen and (max-width: 723px) {
+  .partners p {
+  width: 100%;
+  }
+}
