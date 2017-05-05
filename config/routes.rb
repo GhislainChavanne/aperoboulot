@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get 'equipe',  to: 'pages#equipe'
   get 'prestations',  to: 'pages#prestation'
   match '/contacts',     to: 'contacts#new',             via: 'get'
-  resources "contacts", only: [:new, :create]
+  post 'contacts', to: 'contacts#create'
 end
