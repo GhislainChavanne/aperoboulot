@@ -5,7 +5,10 @@
  * ------------------------------------- */
 
 p {
-  letter-spacing: 2px;
+  font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    line-height: 140%;
+    font-size: 17px;
 }
 
 h5 {
@@ -13,6 +16,11 @@ h5 {
 }
 
 // Paddings
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .padded {
   padding-top: 5em;
   padding-bottom: 5em;
@@ -77,7 +85,8 @@ h5 {
   width: 60%;
   h2 {
   font-family: 'Kaushan Script', cursive;
-  color: black
+  color: black;
+  margin-bottom: 25px;
   }
 }
 
@@ -90,7 +99,8 @@ h5 {
   width: 60%;
   h2 {
   font-family: 'Kaushan Script', cursive;
-  color: black
+  color: black;
+  margin-bottom: 25px;
   }
 }
 

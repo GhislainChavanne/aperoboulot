@@ -2,3 +2,24 @@
   height: 600px;
   width: 100%;
 }
+
+
+.valeurs {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    font-size: 60px;
+  }
+  p {
+    padding: 20px;
+  }
+}
+
