@@ -3,6 +3,11 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-$('img').on('click', function(event) {
-  $(this).toggleClass('.navbar');
+
+$(document).ready(function() {
+    $('.hello').popover({
+      content: "hello there !"
+    });
+    $('body').css({ 'background-color': '#DDF4FF' });
+
 });
