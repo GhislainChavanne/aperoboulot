@@ -13,13 +13,13 @@ gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
+gem "twitter-bootstrap-rails"
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
-gem "mail_form", ">= 1.3.0"
-gem 'simple_form'
+gem 'mail_form', '>= 1.3.0'
 
 group :development, :test do
   gem 'binding_of_caller'
