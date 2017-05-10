@@ -28,7 +28,9 @@
           <%= f.input :message, :as => :text, :required => true, placeholder: "Votre message" %>
         </div>
       </div>
+      <% link_to contacts_path %>
     <%= f.button :submit, 'Send message' %>
+      <% end %>
     <% end %>
     </div>
   </div>
