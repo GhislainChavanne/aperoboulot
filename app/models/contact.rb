@@ -1,4 +1,5 @@
 class Contact < MailForm::Base
+  include MailForm::Delivery
   attribute :nom,      :validate => true
   attribute :prenom,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
