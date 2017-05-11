@@ -10,4 +10,7 @@ class PagesController < ApplicationController
   def prestation
   end
 
+  def contact
+  end
+
 end

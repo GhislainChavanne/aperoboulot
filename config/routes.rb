@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'equipe',  to: 'pages#equipe'
   get 'prestations',  to: 'pages#prestation'
-  resources "contacts", only: [:new, :create]
+  get 'contact', to: 'pages#contact'
 end
