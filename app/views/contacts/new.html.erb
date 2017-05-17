@@ -1,0 +1,45 @@
+<div class="wraper">
+ <h2 class="title">NOUS CONTACTER</h2>
+ <div class="wraper" style="background: #e8ecf0; padding: 40px;">
+  <h3 class="text-center" style="font-weight: bolder; color: black;">ADRESSE</h3>
+  <p class="text-center">46 rue Monsieur Le Prince, 75006 Paris</p>
+
+  <h2 class="text-center" style="color: #F5003E; font-family: 'Kaushan Script', cursive; margin-top: 40px; margin-bottom: 30px;">Formulaire de demander <br> de devis en ligne</h2>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <%= f.input :nom, :required => true, :placeholder=> "Nom" %>
+            <%= f.input :prenom, :required => true, :placeholder=> "Prénom" %>
+            <%= f.input :email, :required => true, :placeholder=> "Email"%>
+            <%= f.input :societe, :required => true, :placeholder=> "Société" %>
+          </div>
+          <div class="col-md-6">
+            <%= f.input :date, :required => true, :placeholder=> "Date" %>
+            <%= f.input :type, :required => true, :placeholder=> "Type d'événement" %>
+            <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
+            <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
+          </div>
+          <div class="col-xs-12">
+            <div class="message">
+            <%= f.input :message, :as => :text, :required => true, :placeholder=> "Votre message" %>
+            </div>
+          </div>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div class="col-xs-12">
+            <div class="button">
+              <%= f.button :submit, 'Envoyer', :class=> "btn btn-primary text-center" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+

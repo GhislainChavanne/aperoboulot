@@ -19,7 +19,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
-gem 'mail_form', '>= 1.3.0'
+gem 'mail_form'
 
 group :development, :test do
   gem 'binding_of_caller'

@@ -1,0 +1,30 @@
+.form-horizontal {
+  margin-top: 20px;
+  input {
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  }
+  label {
+    display: none;
+  }
+}
+
+.button {
+  width: 40%;
+  margin: auto;
+}
+
+.message {
+  width: 70%;
+  margin: auto;
+}
+
+    .placeholder {
+      font-size: 100px;
+    }
+
+.btn {
+  background-color: #f5003e;
+}
