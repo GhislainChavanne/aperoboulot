@@ -1,10 +1,13 @@
 .form-horizontal {
   margin-top: 20px;
+  position: relative;
   input {
   border-radius: 20px;
   width: 90%;
   margin: auto;
   margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: 'Josefin Sans', sans-serif;
   }
   label {
     display: none;
@@ -12,19 +15,33 @@
 }
 
 .button {
-  width: 40%;
+  width: 20%;
   margin: auto;
 }
 
 .message {
   width: 70%;
   margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  textarea {
+    letter-spacing: 2px;
+    border-radius: 20px;
+  }
 }
-
-    .placeholder {
-      font-size: 100px;
-    }
 
 .btn {
   background-color: #f5003e;
+  border: 1px solid #f5003e;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #f5003e;
+}
+
+.presta-icons {
+  position: absolute;
+  top: -30px;
+  right: 0;
 }

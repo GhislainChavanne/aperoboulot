@@ -1,10 +1,12 @@
-<div class="wraper">
+<div class="wrapper">
  <h2 class="title">NOUS CONTACTER</h2>
- <div class="wraper" style="background: #e8ecf0; padding: 40px;">
+ <div class="wrapper" style="background: #e8ecf0; padding: 40px;">
   <h3 class="text-center" style="font-weight: bolder; color: black;">ADRESSE</h3>
   <p class="text-center">46 rue Monsieur Le Prince, 75006 Paris</p>
-
+  <div style="position: relative; width: 50%; margin: auto;">
   <h2 class="text-center" style="color: #F5003E; font-family: 'Kaushan Script', cursive; margin-top: 40px; margin-bottom: 30px;">Formulaire de demander <br> de devis en ligne</h2>
+    <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 0px;") %>
+  </div>
     <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
       <div class="container">
         <div class="row">

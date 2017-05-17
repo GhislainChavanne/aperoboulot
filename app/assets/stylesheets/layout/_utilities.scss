@@ -4,11 +4,28 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url("loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 p {
   font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 3px;
-    line-height: 140%;
-    font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 140%;
+  font-size: 17px;
 }
 
 h5 {
@@ -67,6 +84,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
 
 .orange {
@@ -83,6 +101,7 @@ h5 {
   padding-left: 40px;
   padding-right: 40px;
   width: 60%;
+  position: relative;
   h2 {
   font-family: 'Kaushan Script', cursive;
   color: black;
