@@ -41,3 +41,30 @@
   text-align: center;
   }
 }
+
+.card-presta {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.cover-img {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.cover-img h2 {
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+}
