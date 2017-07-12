@@ -70,11 +70,16 @@
   }
 }
 
-.cover-img h2 {
+.cover-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h2 {
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #f5003e;
   font-family: 'Kaushan Script', cursive;
+}
 }
 
 .modal-content {
@@ -98,5 +103,19 @@
     position: absolute;
     top: 10px;
     right: 12px;
+  }
+}
+
+.img-presta {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  img {
+    height: auto;
+    width: auto;
+    max-height: 180px;
   }
 }
