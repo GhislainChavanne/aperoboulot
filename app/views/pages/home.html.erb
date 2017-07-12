@@ -16,13 +16,21 @@
       <div class="col-md-4">
         <div class="card-actu">
           <% if article.category == "Actu" %>
-            <%= image_tag('actus.png') %>
+            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('actu.png') %>');">
+              <h4>#Actus</h4>
+            </div>
           <% elsif article.category == "Event" %>
-            <%= image_tag('evenement.png') %>
+            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('event.png') %>');">
+            <h4 style="color: white;">#Événement</h4>
+            </div>
           <% elsif article.category == "Presse" %>
-            <%= image_tag('presse.png') %>
+            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('presse.png') %>');">
+            <h4>#OnParleDeNous</h4>
+            </div>
           <% elsif article.category == "Chronique" %>
-            <%= image_tag('chronique.png') %>
+            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('chronique.png') %>');">
+            <h4>#Chronique</h4>
+            </div>
           <% end %>
           <div class="card-content">
             <h4><%= article.title  %></h4>
