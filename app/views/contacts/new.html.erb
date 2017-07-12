@@ -18,7 +18,7 @@
           </div>
           <div class="col-md-6">
             <%= f.input :date, :required => true, :placeholder=> "Date" %>
-            <%= f.input :type, :required => true, :placeholder=> "Type d'événement" %>
+            <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners Bio", "Déjeuner", "Cocktails", "Goûter", "Journée complète"]), :class => 'genForm_dropBox' %>
             <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
             <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
           </div>
@@ -32,7 +32,7 @@
           </div>
           <div class="col-xs-12">
             <div class="button">
-              <%= f.button :submit, 'Envoyer', :class=> "btn btn-primary text-center" %>
+              <%= f.button :submit, 'Go !', :class=> "btn btn-primary text-center" %>
             </div>
           </div>
         </div>
