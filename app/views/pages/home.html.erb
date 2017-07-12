@@ -15,8 +15,11 @@
     <div class="col-md-4">
       <div class="card-actu">
         <% @articles.each do |article|  %>
+          <% if article.category == "Actu" %>
+          <%= image_tag('voiture.png', class: 'img2') %>
           <h3><%= article.title  %></h3>
           <h4><%= article.description  %></h4>
+          <% end %>
         <% end %>
       </div>
     </div>
