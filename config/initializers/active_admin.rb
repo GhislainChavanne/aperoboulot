@@ -4,7 +4,9 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Aperoboulot"
+
+
+  config.site_title = "Apero Boulot"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -98,16 +100,7 @@ ActiveAdmin.setup do |config|
   # will call the method to return the path.
   #
   # Default:
-  # [...]
-  # [...]
-  config.authentication_method = :authenticate_admin!
-  # [...]
-  config.current_user_method = :current_user
-  # [...]
-  config.logout_link_path = :destroy_user_session_path
-  # [...]
-  config.logout_link_method = :delete
-  # [...]
+  config.logout_link_path = :destroy_admin_user_session_path
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
@@ -299,4 +292,19 @@ ActiveAdmin.setup do |config|
   # You can inherit it with own class and inject it for all resources
   #
   # config.order_clause = MyOrderClause
+  def authenticate_admin!
+  redirect_to new_user_session_path unless current_user && current_user.admin
+  end
+
+  # Edit those four lines, to reuse existing `User` model.
+  ActiveAdmin.setup do |config|
+  # [...]
+    config.authentication_method = :authenticate_admin!
+  # [...]
+    config.current_user_method = :current_user
+  # [...]
+    config.logout_link_path = :destroy_user_session_path
+  # [...]
+    config.logout_link_method = :delete
+  end
 end
