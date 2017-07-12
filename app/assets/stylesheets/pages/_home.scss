@@ -8,17 +8,20 @@ p {
 
 .banner {
   color: white;
-  height: 100vh;
+  margin-top: 45px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 120px;
+  height: 80vh;
 }
 .banner h1 {
   font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: #F5003E;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.4);
+  color: white;
   font-family: 'Kaushan Script', cursive;
   font-size: 70px;
 }
