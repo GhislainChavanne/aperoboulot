@@ -1,0 +1,30 @@
+<div class="wrapper" style="margin-top: 200px;">
+ <div class="container">
+ <div class="row">
+   <div class="col-xs-12">
+      <% if @article.category =="Actu"  %>
+      <div class="img-article" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('actus.png') %>');">
+      <h3>#<%= @article.title  %></h3>
+      </div>
+      <% elsif @article.category =="Event"  %>
+        <div class="img-article" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('event.png') %>');">
+        <h3>#<%= @article.title  %></h3>
+        </div>
+      <% elsif @article.category =="Chronique" %>
+        <div class="img-article" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('chronique.png') %>');">
+        <h3>#<%= @article.title  %></h3>
+        </div>
+      <% elsif @article.category =="Presse"  %>
+        <div class="img-article" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('presse.png') %>');">
+        <h3>#<%= @article.title  %></h3>
+        </div>
+      <% end %>
+    </div>
+   </div>
+   <div class="content-article">
+       <p><%= @article.content %></p>
+      <p style="margin-top: 30px; font-weight: bolder; font-style: underline;"><%= @article.auteur  %></p>
+   </div>
+ </div>
+</div>
+

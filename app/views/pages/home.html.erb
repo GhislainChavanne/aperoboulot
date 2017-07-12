@@ -13,6 +13,7 @@
   </div>
   <div class="row">
     <% @articles.each do |article|  %>
+    <%= link_to article_path(article) do %>
       <div class="col-md-4">
         <div class="card-actu">
           <% if article.category == "Actu" %>
@@ -41,6 +42,7 @@
           </div>
         </div>
       </div>
+    <% end %>
     <% end %>
   </div>
 </div>
