@@ -1,13 +1,14 @@
 ActiveAdmin.register Article do
   permit_params :title, :description, :category, :content
 
-show do
-    attributes_table do
-      row :title
-      row :description
-      row :category
-      row :content
+
+  form(:html => { :multipart => true }) do |f|
+    f.inputs "Article" do
+      f.input :title
+      f.input :description
+      f.input :category
+      f.input :content
     end
-    active_admin_comments
+    f.submit
   end
 end

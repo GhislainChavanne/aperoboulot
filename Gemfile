@@ -9,6 +9,7 @@ gem 'devise'
 gem 'redis'
 gem 'pg', '~> 0.20.0'
 
+
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
