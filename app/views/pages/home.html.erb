@@ -12,18 +12,29 @@
     <h2 class="text-center title1 hello"><strong>ACTUALITÉS</strong></h2>
   </div>
   <div class="row">
-    <div class="col-md-4">
-      <div class="card-actu">
-        <% @articles.each do |article|  %>
+    <% @articles.each do |article|  %>
+      <div class="col-md-4">
+        <div class="card-actu">
           <% if article.category == "Actu" %>
-          <%= image_tag('voiture.png', class: 'img2') %>
-          <h3><%= article.title  %></h3>
-          <h4><%= article.description  %></h4>
+            <%= image_tag('actus.png') %>
+          <% elsif article.category == "Event" %>
+            <%= image_tag('evenement.png') %>
+          <% elsif article.category == "Presse" %>
+            <%= image_tag('presse.png') %>
+          <% elsif article.category == "Chronique" %>
+            <%= image_tag('chronique.png') %>
           <% end %>
-        <% end %>
+          <div class="card-content">
+            <h4><%= article.title  %></h4>
+            <p>Par <%= article.auteur  %></p>
+          </div>
+          <div class="article-bottom">
+              <%= image_tag('grouperouge.png') %>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
-</div>
+
 
