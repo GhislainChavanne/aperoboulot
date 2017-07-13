@@ -1,6 +1,5 @@
 ActiveAdmin.register Article do
   permit_params :title, :description, :category, :content, :auteur
-  CAT = %w(Actu Event Presse Chronique)
 
   menu label: "1. ACTUS"
 
@@ -17,7 +16,7 @@ ActiveAdmin.register Article do
     f.inputs "Article" do
       f.input :title
       f.input :description
-      input :category, placeholder: "Catégorie", :as => :select, :collection => CAT
+      input :category, placeholder: "Catégorie", :as => :select, :collection => ["Actu", "Event", "Presse", "Chronique"]
       f.input :auteur
       f.input :content
     end
