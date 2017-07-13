@@ -8,42 +8,78 @@
     </div>
   </div>
 
-  <div class="container hello" style="margin-bottom: 20px; margin-top: 30px;">
-    <h2 class="text-center title1 hello"><strong>ACTUALITÉS</strong></h2>
+  <div class="wrapper">
+    <div class="container" style="padding-top: 30px; padding-bottom: 10px;">
+      <div class="title-home">
+        <h3 style="line-height: 30px; letter-spacing: 3px;" class="text-center">Nous vous apportons du goût, de bons produits, du service ... <br> Et vous garantissons une vraie convivialité lors de votre évènement !</h3>
+        <%= image_tag('grouperouge.png') %>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <% @articles.each do |article|  %>
-    <%= link_to article_path(article) do %>
-      <div class="col-md-4">
-        <div class="card-actu">
-          <% if article.category == "Actu" %>
-            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('actus.png') %>');">
-              <h4>#Actus</h4>
-            </div>
-          <% elsif article.category == "Event" %>
-            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('event.png') %>');">
-            <h4 style="color: white;">#Événement</h4>
-            </div>
-          <% elsif article.category == "Presse" %>
-            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('presse.png') %>');">
-            <h4>#OnParleDeNous</h4>
-            </div>
-          <% elsif article.category == "Chronique" %>
-            <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('chronique.png') %>');">
-            <h4>#Chronique</h4>
-            </div>
-          <% end %>
-          <div class="card-content">
-            <h4><%= article.title  %></h4>
-            <p>Par <%= article.auteur  %></p>
+  <div class="wrapper" style="padding-top: 40px; padding-bottom: 40px; position: relative;" >
+    <div class="line">
+      <div class="line-background"></div>
+    </div>
+    <div class="container" style="width: 80%; margin: auto;">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-accroche" style="background-image: linear-gradient(170deg, #fd9a00 50%, transparent 30%),  url('<%= image_path('back-gouter.png') %>');">
+            <h2>Nos prestas !</h2>
           </div>
-          <div class="article-bottom">
-              <%= image_tag('grouperouge.png') %>
+        </div>
+        <div class="col-md-4">
+          <div class="card-accroche" style="background-image: linear-gradient(170deg, #fd9a00 50%, transparent 50%),  url('<%= image_path('back-petitdej.png') %>'); ">
+            <h2>Votre devis !</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-accroche" style="background-image: linear-gradient(170deg, #fd9a00 50%, transparent 50%),  url('<%= image_path('back-dej.png') %>');">
+            <h2>Notre histoire !</h2>
           </div>
         </div>
       </div>
-    <% end %>
-    <% end %>
+    </div>
+  </div>
+
+
+  <div class="wrapper" style="background: #e8ecf0;" >
+    <div class="container hello" style="margin-bottom: 20px; margin-top: 30px;">
+      <h2 class="text-center title1 hello"><strong>ACTUALITÉS</strong></h2>
+    </div>
+    <div class="row">
+      <% @articles.each do |article|  %>
+        <%= link_to article_path(article) do %>
+          <div class="col-md-4">
+            <div class="card-actu">
+              <% if article.category == "Actu" %>
+                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('actus.png') %>');">
+                  <h4>#Actus</h4>
+                </div>
+              <% elsif article.category == "Event" %>
+                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('event.png') %>');">
+                <h4 style="color: white;">#Événement</h4>
+                </div>
+              <% elsif article.category == "Presse" %>
+                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('presse.png') %>');">
+                <h4>#OnParleDeNous</h4>
+                </div>
+              <% elsif article.category == "Chronique" %>
+                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('chronique.png') %>');">
+                <h4>#Chronique</h4>
+                </div>
+              <% end %>
+              <div class="card-content">
+                <h4><%= article.title  %></h4>
+                <p>Par <%= article.auteur  %></p>
+              </div>
+              <div class="article-bottom">
+                  <%= image_tag('grouperouge.png') %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 
