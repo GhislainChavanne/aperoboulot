@@ -8,15 +8,15 @@ p {
 
 .banner {
   color: white;
-  margin-top: 45px;
+  margin-top: 50px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-repeat: no-repeat;
-  background-size: cover;
   background-position:center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   align-items: center;
-  padding-left: 120px;
-  height: 100vh;
+  padding-left: 90px;
 }
 .banner h1 {
   font-weight: bold;
