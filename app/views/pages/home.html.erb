@@ -46,8 +46,7 @@
 
   <div class="wrapper" style="background: #e8ecf0; padding-top: 5px;" >
       <h2 class="title1 text-center"><strong>Actualités</strong></h2>
-    <div class="container hello" style="margin-bottom: 20px; margin-top: 30px;">
-    </div>
+    <div class="container hello" style=" padding-bottom: 40px;margin-top: 30px;">
     <div class="row">
       <% @articles.each do |article|  %>
         <%= link_to article_path(article) do %>
@@ -82,7 +81,11 @@
         <% end %>
       <% end %>
     </div>
+      <div class="text-center">
+    <a href="/articles"><p>Tous nos articles ici →</p></a>
   </div>
+  </div>
+ </div>
 </div>
 
 
