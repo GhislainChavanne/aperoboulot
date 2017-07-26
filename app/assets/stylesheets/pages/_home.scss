@@ -6,30 +6,80 @@ p {
   margin: 0 0 0px;
 }
 
-.banner {
+.carousel_wrapper {
+  position: relative;
+  z-index: -1;
+  align-items: center;
+  width: 100%;
+    h1 {
+    position: absolute;
+    font-weight: bold;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+    z-index: 1;
+    top: 30vh;
+    left: 10vh;
+  }
+}
+
+.carousel {
+  width: 100%;    /* Shows as a border around the carousel */
+  align-items: center;
+  flex: 0 0 50%;
+  position: relative;
+  img {
+    margin: auto;
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 50px;
+}
+
+#myCarousel {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  clear: left;
+}
+
+.item {
   color: white;
-  margin-top: 50px;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-left: 90px;
 }
-.banner h1 {
-  font-weight: bold;
-  text-shadow: 2px 1px rgba(0, 0, 0, 0.4);
-  color: white;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 70px;
-}
-.banner p {
-  font-size: 20px;
-  font-weight: lighter;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+          transition-property: opacity;
+        }
+
+    .item,
+    .active.left,
+    .active.right {
+       opacity: 0;
+      }
+
+    .active,
+    .next.left,
+    .prev.right {
+        opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 .card-accroche {
@@ -117,4 +167,7 @@ p {
     right: 10px;
   }
 }
+
+
+
 

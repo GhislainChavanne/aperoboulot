@@ -1,10 +1,27 @@
 
 <div class="wrapper">
-  <div class="banner" style="background-image: url('<%= image_path('banner.jpg') %>');">
-    <div class="banner-content">
-      <h1><span style="font-size: 30px;">C'est</span> bon,</h1>
-      <h1><span style="font-size: 30px;">C'est</span> frais,</h1>
-      <h1><span style="font-size: 30px;">Et c'est</span> au boulot !</h1>
+
+  <div class="wrapper carousel_wrapper">
+  <h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" style="background-image: url('<%= image_path('banner2.png') %>');">
+          </div>
+
+          <div class="item" style="background-image: url('<%= image_path('banner1.png') %>');">
+          </div>
+
+          <div class="item" style="background-image: url('<%= image_path('banner3.png') %>');">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
