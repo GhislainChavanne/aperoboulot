@@ -14,10 +14,8 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active" style="background-image: url('<%= image_path('banner2.png') %>');">
           </div>
-
           <div class="item" style="background-image: url('<%= image_path('banner1.png') %>');">
           </div>
-
           <div class="item" style="background-image: url('<%= image_path('banner3.png') %>');">
           </div>
         </div>
@@ -28,7 +26,7 @@
   <div class="wrapper">
     <div class="container" style="padding-top: 30px; padding-bottom: 10px;">
       <div class="title-home">
-        <h3 style="line-height: 30px; letter-spacing: 3px;" class="text-center">Nous vous apportons du goût, de bons produits, du service ... <br> Et vous garantissons une vraie convivialité lors de votre évènement !</h3>
+        <h3 class="text-center color_black">Nous vous apportons du goût, de bons produits, du service ... <br> Et vous garantissons une vraie convivialité lors de votre évènement !</h3>
         <%= image_tag('grouperouge.png') %>
       </div>
     </div>
@@ -40,29 +38,29 @@
           <div class="card-accroche" style="background-image: url('<%= image_path('accroche2.png') %>');">
             <h2>Nos prestas !</h2>
           </div>
-          <p>Découvrez toutes nos prestations: Petits dejs Bio, Cocktails, Apéros...</p>
+          <p class="color_black">Découvrez toutes nos prestations: Petits dejs Bio, Cocktails, Apéros...</p>
           <a href="/prestations"><p>Toutes nos prestas →</p></a>
         </div>
         <div class="col-md-4">
           <div class="card-accroche" style="background-image: url('<%= image_path('accroche1.png') %>'); ">
             <h2>Votre devis !</h2>
           </div>
-          <p>N'hésitez pas à faire une demande en ligne sur le lien ci-dessous !</p>
+          <p class="color_black">N'hésitez pas à faire une demande en ligne sur le lien ci-dessous !</p>
           <a href="/contacts"><p>Votre devis en ligne →</p></a>
         </div>
         <div class="col-md-4">
           <div class="card-accroche" style="background-image: url('<%= image_path('accroche4.png') %>');">
             <h2>Notre histoire !</h2>
           </div>
-          <p>L'apérobilette, notre stratégie de livraison et de production, c'est ici ;)</p>
+          <p class="color_black">L'apérobilette, notre stratégie de livraison et de production, c'est ici ;)</p>
           <a href="/equipe"><p>Qui sommes-nous? →</p></a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="wrapper" style="background: #e8ecf0; padding-top: 5px;" >
-      <h2 class="title1 text-center"><strong>Actualités</strong></h2>
+  <h2 class="title text-center"><strong>Actualités</strong></h2>
+  <div class="wrapper" style="background: #f9f9f9; padding-top: 5px;" >
     <div class="container hello" style=" padding-bottom: 40px;margin-top: 30px;">
     <div class="row">
       <% @articles.each do |article|  %>

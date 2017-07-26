@@ -3,6 +3,22 @@
   width: 100%;
 }
 
+.wrapper-blue {
+  background: #f9f9f9;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.wrapper-white {
+  background-repeat: no-repeat;
+  background-position: right 0em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .valeurs {
   height: 400px;
