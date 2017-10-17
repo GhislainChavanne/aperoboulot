@@ -23,67 +23,14 @@
     </div>
   </div>
 
-  <div class="wrapper">
-    <div class="container" style="padding-top: 30px; padding-bottom: 10px;">
-      <div class="title-home">
-        <h3 class="text-center color_black">Nous vous apportons du goût, de bons produits, du service ... <br> Et vous garantissons une vraie convivialité lors de votre évènement !</h3>
-        <%= image_tag('grouperouge.png') %>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper" style="padding-top: 40px; padding-bottom: 40px; position: relative;" >
-    <div class="container" style="width: 100%; margin: auto;">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <div class="card-accroche" style="background-image: url('<%= image_path('accroche2.png') %>');">
-            <h2>Nos prestas !</h2>
-          </div>
-          <p class="color_black">Découvrez toutes nos prestations: Petits dejs Bio, Cocktails, Apéros...</p>
-          <a href="/prestations"><p>Toutes nos prestas →</p></a>
-        </div>
-        <div class="col-md-4">
-          <div class="card-accroche" style="background-image: url('<%= image_path('accroche1.png') %>'); ">
-            <h2>Votre devis !</h2>
-          </div>
-          <p class="color_black">N'hésitez pas à faire une demande en ligne sur le lien ci-dessous !</p>
-          <a href="/contacts"><p>Votre devis en ligne →</p></a>
-        </div>
-        <div class="col-md-4">
-          <div class="card-accroche" style="background-image: url('<%= image_path('accroche4.png') %>');">
-            <h2>Notre histoire !</h2>
-          </div>
-          <p class="color_black">L'apérobilette, notre stratégie de livraison et de production, c'est ici ;)</p>
-          <a href="/equipe"><p>Qui sommes-nous? →</p></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
     <h2 class="title"><span>Actualités</span></h2>
-  <div class="wrapper" style="background: #f9f9f9; padding-top: 5px;" >
+  <div class="wrapper" style="padding-top: 5px;" >
     <div class="container hello" style=" padding-bottom: 40px;margin-top: 30px;">
     <div class="row">
       <% @articles.each do |article|  %>
         <%= link_to article_path(article) do %>
           <div class="col-md-4">
             <div class="card-actu">
-              <% if article.category == "Actu" %>
-                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('actus.png') %>');">
-                  <h4>#Actus</h4>
-                </div>
-              <% elsif article.category == "Event" %>
-                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('event.png') %>');">
-                <h4 style="color: white;">#Événement</h4>
-                </div>
-              <% elsif article.category == "Presse" %>
-                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('presse.png') %>');">
-                <h4>#OnParleDeNous</h4>
-                </div>
-              <% elsif article.category == "Chronique" %>
-                <div class="card-title" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 50%),  url('<%= image_path('chronique.png') %>');">
-                <h4>#Chronique</h4>
-                </div>
-              <% end %>
               <div class="card-content">
                 <h4><strong><%= article.title  %></strong>  </h4>
                 <p>Par <%= article.auteur  %></p>
@@ -97,7 +44,7 @@
       <% end %>
     </div>
       <div class="text-center">
-    <a href="/articles"><p>Tous nos articles ici →</p></a>
+    <a href="/articles"><p>Tous nos articles</p></a>
   </div>
   </div>
  </div>
