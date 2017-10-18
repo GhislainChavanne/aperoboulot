@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :title, :description, :category, :content, :auteur
+  permit_params :title, :description, :category, :content, :auteur, :photo, :photo_cache
 
   menu label: "1. ACTUS"
 
@@ -16,6 +16,8 @@ ActiveAdmin.register Article do
     f.inputs "Article" do
       f.input :title
       f.input :description
+      f.file_field :photo
+      f.hidden_field :photo_cache, as: :hidden
       input :category, placeholder: "Catégorie", :as => :select, :collection => ["Actu", "Event", "Presse", "Chronique"]
       f.input :auteur
       f.input :content

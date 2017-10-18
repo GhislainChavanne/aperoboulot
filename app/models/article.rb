@@ -4,4 +4,5 @@ class Article < ApplicationRecord
   validates :description, presence: true, length: { maximum: 200 }
   validates :content, presence: true
   validates :category, presence: true
+  mount_uploader :photo, PhotoUploader
 end

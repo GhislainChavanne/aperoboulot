@@ -8,7 +8,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'redis'
 gem 'pg', '~> 0.20.0'
-
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -19,7 +20,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'mail_form'
-gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'activeadmin', '1.0.0'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 group :development, :test do
