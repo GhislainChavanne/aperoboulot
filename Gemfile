@@ -10,7 +10,6 @@ gem 'redis'
 gem 'pg', '~> 0.20.0'
 gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
-gem 'mini_magick'
 
 gem 'sass-rails'
 gem 'jquery-rails'
