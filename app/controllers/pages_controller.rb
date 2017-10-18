@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @articles = Article.order('created_at DESC').first(3)
+    @article = Article.last(1).reverse
   end
 
   def equipe

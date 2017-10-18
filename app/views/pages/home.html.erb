@@ -1,6 +1,4 @@
-
 <div class="wrapper">
-
   <div class="wrapper carousel_wrapper">
   <h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
@@ -23,17 +21,19 @@
     </div>
   </div>
 
-    <h2 class="title"><span>Actualités</span></h2>
-  <div class="wrapper" style="padding-top: 5px;" >
-    <div class="container hello" style=" padding-bottom: 40px;margin-top: 30px;">
+  <h2 class="title">Actualités</h2>
+
+  <div class="wrapper">
+    <div class="container" style=" padding-bottom: 40px;margin-top: 30px;">
     <div class="row">
-      <% @articles.each do |article|  %>
+      <% @article.each do |article|  %>
         <%= link_to article_path(article) do %>
-          <div class="col-md-4">
-            <div class="card-actu">
-              <div class="card-content">
-                <%= cl_image_tag article.photo  %>
-                <h4><strong><%= article.title  %></strong>  </h4>
+          <div class="col-md-12">
+            <div class="card-actu-top">
+              <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
+              </div>
+              <div class="card-content-top">
+                <h4><strong><%= article.title.upcase %></strong></h4>
                 <p>Par <%= article.auteur  %></p>
               </div>
               <div class="article-bottom">
@@ -43,10 +43,30 @@
           </div>
         <% end %>
       <% end %>
-    </div>
+      </div>
+      <div class="row">
+        <% @articles.each do |article|  %>
+          <%= link_to article_path(article) do %>
+            <div class="col-md-4">
+              <div class="card-actu">
+                <div class="card-img" style="background-image: url('<%= cl_image_path article.photo %>')">
+                </div>
+                <div class="card-content">
+                  <h4><strong><%= article.title.upcase  %></strong>  </h4>
+                  <p>Par <%= article.auteur  %></p>
+                </div>
+                <div class="article-bottom">
+                    <%= image_tag('grouperouge.png') %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
       <div class="text-center">
-    <a href="/articles"><p>Tous nos articles</p></a>
-  </div>
+        <a href="/articles"><p>Tous nos articles</p></a>
+      </div>
+    </div>
   </div>
  </div>
 </div>
