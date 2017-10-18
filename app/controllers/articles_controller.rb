@@ -10,4 +10,8 @@ class ArticlesController < ApplicationController
     @content = Article.find(params[:id]).content
   end
 
+  def article_params
+   params.require(:product).permit(:title, :description, :category, :content, :auteur, :photo, :photo_cache)
+  end
+
 end
