@@ -42,8 +42,8 @@
   </div>
 
   <h2 class="title text-center">Nos options</h2>
-  <div class="wrapper" style="background: #f9f9f9; padding-top: 30px; padding-bottom: 30px;">
-    <div class="wrapper" style="background: #f9f9f9; position: relative; padding-top: 30px; padding-bottom: 0px;">
+  <div class="wrapper" style="padding-bottom: 50px; padding-top: 50px; background: #f9f9f9">
+    <div class="wrapper" style="position: relative; padding-top: 30px; padding-bottom: 30px;">
       <div class="line">
          <div class="line-background"></div>
       </div>
@@ -53,7 +53,7 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('back-petitdej.png') %>');">
                 <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
-                <h2>Nos petits déjeuners BIO</h2>
+                  <h2 class="title-card-red">NOS PETITS DÉJEUNERS BIO</h2>
                </button>
               </div>
             </div>
@@ -62,7 +62,7 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('back-dej.png') %>');">
                 <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg1">
-                <h2>Nos déjeuners</h2>
+                  <h2 class="title-card-red">NOS DÉJEUNERS</h2>
               </button>
               </div>
             </div>
@@ -71,8 +71,8 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('back-cocktail.png') %>');">
                 <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg2">
-              <h2>Nos coktails</h2>
-              </button>
+                  <h2 class="title-card-red">NOS COCKTAILS</h2>
+                </button>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
       </div>
     </div>
 
-    <div class="wrapper" style="background: #f9f9f9; position: relative; padding-top: 30px; padding-bottom: 0px;">
+    <div class="wrapper" style="background: #f9f9f9; position: relative; padding-top: 30px; padding-bottom: 30px;">
       <div class="line">
          <div class="line-background1"></div>
       </div>
@@ -143,7 +143,7 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('back-gouter.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg3">
-                <h2>Nos gouters</h2>
+                <h2 class="title-card-yellow">NOS GOÛTERS</h2>
                 </button>
               </div>
             </div>
@@ -152,7 +152,7 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('back-journee.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg4">
-              <h2>Journée complète</h2>
+              <h2 class="title-card-yellow">JOURNÉE COMPLÈTE</h2>
               </button>
               </div>
             </div>
@@ -161,7 +161,7 @@
             <div class="card-presta">
               <div class="cover-img" style="background-image: url('<%= image_path('banner2.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg5">
-              <h2>Toutes nos options</h2>
+              <h2 class="title-card-yellow">TOUTES NOS OPTIONS</h2>
               </button>
               </div>
             </div>
@@ -178,8 +178,6 @@
         <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
         <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
         <h4>Nos gouters</h4>
-        <div class="img-presta">
-        </div>
         <ul>
           <li>Gâteu personnalisé</li>
           <li>Crêpes</li>
@@ -196,9 +194,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
         <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
         <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-        <h4>Nos coktails</h4>
-        <div class="img-presta">
-        </div>
+        <h4>Journée complète</h4>
         <ul>
           <li>Seminaire</li>
           <li>team building</li>
@@ -215,9 +211,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
         <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
         <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-        <h4>Nos coktails</h4>
-        <div class="img-presta">
-        </div>
+        <h4>Toutes nos options</h4>
         <ul>
           <li>Vins et champagne de vignerons</li>
           <li>Pièces salées</li>
@@ -228,6 +222,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   <div class="wrapper orange">
     <div class="container map-container">
