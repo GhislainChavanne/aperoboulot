@@ -1,0 +1,6 @@
+[0G[1] pry(main)> rm san_francisco.jpg
+NameError: undefined local variable or method `san_francisco' for main:Object
+from (pry):1:in `<main>'
+[2] pry(main)> 
+[3] pry(main)> d
+[3] pry(main)> 

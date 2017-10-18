@@ -16,8 +16,8 @@ ActiveAdmin.register Article do
     f.inputs "Article" do
       f.input :title
       f.input :description
-      f.file_field :photo
-      f.hidden_field :photo_cache, as: :hidden
+      f.input :photo
+      f.input :photo_cache, as: :hidden
       input :category, placeholder: "Catégorie", :as => :select, :collection => ["Actu", "Event", "Presse", "Chronique"]
       f.input :auteur
       f.input :content
@@ -25,3 +25,4 @@ ActiveAdmin.register Article do
     f.submit
   end
 end
+
