@@ -22,7 +22,7 @@
 
   <h2 class="title">Actualités</h2>
 
-  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative;">
+  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative; background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="line">
        <div class="line-background"></div>
     </div>
@@ -46,10 +46,7 @@
       <% end %>
     </div>
   </div>
-  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative">
-    <div class="line">
-       <div class="line-background1"></div>
-    </div>
+  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative; background-image: url('<%= image_path('background-pink.png') %>')">
       <div class="row">
         <% @articles.each do |article|  %>
           <%= link_to article_path(article) do %>
