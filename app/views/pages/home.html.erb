@@ -1,4 +1,4 @@
-<div class="wrapper carousel_wrapper">
+<div class="carousel_wrapper">
 <h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
     <!-- Indicators -->
@@ -19,33 +19,33 @@
   </div>
 </div>
 
-<div class="wrapper" style="background: #f2f2f2; padding-top: 40px; padding-bottom: 40px;">
+<div class="wrapper" style="background: #f2f2f2;">
   <h2 class="title">Actualités</h2>
-  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative; background-image: url('<%= image_path('background-orange.png') %>')">
-    <div class="line">
-       <div class="line-background"></div>
-    </div>
-    <div class="row">
-      <% @article.each do |article|  %>
-        <%= link_to article_path(article) do %>
-          <div class="col-md-12">
-            <div class="card-actu-top">
-              <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
-              </div>
-              <div class="card-content-top">
-                <h4><strong><%= article.title.upcase %></strong></h4>
-                <p>Par <%= article.auteur  %></p>
-              </div>
-              <div class="article-bottom">
-                  <%= image_tag('grouperouge.png') %>
+  <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
+    <div class="container">
+      <div class="row">
+        <% @article.each do |article|  %>
+          <%= link_to article_path(article) do %>
+            <div class="col-md-12">
+              <div class="card-actu-top">
+                <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
+                </div>
+                <div class="card-content-top">
+                  <h4><strong><%= article.title.upcase %></strong></h4>
+                  <p>Par <%= article.auteur  %></p>
+                </div>
+                <div class="article-bottom">
+                    <%= image_tag('grouperouge.png') %>
+                </div>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
   </div>
-  <div class="wrapper" style="padding-left: 50px; padding-right: 50px; position: relative; background-image: url('<%= image_path('background-pink.png') %>')">
+  <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-pink.png') %>')">
+    <div class="container">
       <div class="row">
         <% @articles.each do |article|  %>
           <%= link_to article_path(article) do %>
@@ -66,9 +66,9 @@
         <% end %>
       </div>
     </div>
-    <div class="text-center" style="margin-bottom: 40px;">
-      <a href="/articles"><p>Tous nos articles</p></a>
-    </div>
+  </div>
+  <div class="text-center" style="margin-bottom: 40px;">
+    <a href="/articles"><p>Tous nos articles</p></a>
   </div>
 </div>
 
