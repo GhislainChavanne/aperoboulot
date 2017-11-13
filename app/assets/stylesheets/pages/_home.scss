@@ -83,7 +83,7 @@ p {
   margin: auto;
   position: relative;
   margin-bottom: 40px;
-  border: 1px solid #e8ecf0;
+  border: 10px solid #e8ecf0;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   background-color: white;
   height: 400px;
@@ -98,11 +98,11 @@ p {
 
 .card-img-top {
   flex: 0 0 70%;
-  height: 400px;
   background-position: center;
   background-size: cover !important;
   background-repeat: no-repeat;
-
+  height: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .card-content-top {
@@ -116,7 +116,7 @@ p {
   margin: auto;
   position: relative;
   margin-bottom: 40px;
-  border: 1px solid #e8ecf0;
+  border: 10px solid #e8ecf0;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   background-color: white;
   h4, p {
@@ -127,6 +127,7 @@ p {
     width: 100%;
   }
 }
+
 
 .card-img {
   height: 200px;
@@ -171,18 +172,12 @@ p {
   color: black;
   margin-bottom: 40px;
   width: 20%;
-  border: 3px solid #e8ecf0;
+  border: 10px solid #e8ecf0;
   margin: auto;
   background: white;
 }
 
 .btn-all-articles:hover {
-  padding: 10px;
-  color: black;
-  margin-bottom: 40px;
-  width: 20%;
-  border: 3px solid #e8ecf0;
-  margin: auto;
   background: #F14D4D;;
   color: white;
 }

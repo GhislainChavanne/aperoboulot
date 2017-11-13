@@ -1,25 +1,22 @@
-<div class="carousel_wrapper">
+<div class="carousel_wrapper" style="position: relative; border-bottom: 15px solid #e8ecf0;">
+  <%= image_tag('croissant.png', :style => "position: absolute; top: 100px; left: 15%; z-index: 10;") %>
+  <%= image_tag('carrerouge.png', :style => "position: absolute; bottom: 100px; left: 20%; z-index: 10;") %>
+  <%= image_tag('carre.png', :style => "position: absolute; bottom: 80px; left: 40%; z-index: 10;") %>
+  <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 300px; left: 48%; z-index: 10;") %>
 <h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active" style="background-image: url('<%= image_path('banner2.png') %>');">
+      <div class="item active" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path('banner1.png') %>');">
       </div>
-      <div class="item" style="background-image: url('<%= image_path('banner1.png') %>');">
+      <div class="item" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path('banner3.png') %>');">
       </div>
-      <div class="item" style="background-image: url('<%= image_path('banner3.png') %>');">
+      <div class="item" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path('banner2.png') %>');">
       </div>
     </div>
   </div>
 </div>
 
-<div class="wrapper" style="background: #f8f8f8;">
+<div class="wrapper">
   <h2 class="title">Actualités</h2>
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
@@ -44,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-pink.png') %>')">
+  <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-pink.png') %>');">
     <div class="container">
       <div class="row">
         <% @articles.each do |article|  %>
