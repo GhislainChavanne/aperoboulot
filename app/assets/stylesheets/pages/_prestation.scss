@@ -1,4 +1,4 @@
-.card {
+.card-presta-description {
   img {
     margin-bottom: 20px;
     height: 50px;
@@ -12,88 +12,40 @@
   }
 }
 
-.map-container {
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   height: 200px;
-}
-
-#text-map {
-  position: absolute;
-  width: 715px;
-  font-family: 'Kaushan Script', cursive;
-  color: black;
-}
-
-
-@media screen and (max-width: 752px) {
-  .map-container img {
-  display: none;
-  }
-}
-
-@media screen and (max-width: 752px) {
-  #text-map {
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 100%;
-  text-align: center;
-  }
+.presta-flex {
+  background-repeat: no-repeat;
+  background-position: 0px -15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .card-presta {
-  width: 100%;
+  width: 85%;
   margin: auto;
-  border: 20px solid white;
-  height: 200px;
+  border: 8px solid white;
+  height: 220px;
   background-color: white;
   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   box-shadow: 2px 3px 4px rgba(0,0,0,0.3);
-    .title-card-red {
-    font-size: 18px;
-    padding: 10px;
-    margin: none;
-    background: #F14D4D;
-    position: absolute;
-    bottom: 4px;
-    left: 0px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 1px rgba(0, 0, 0, 0.4);
-  }
-    .title-card-yellow {
-    font-size: 18px;
-    padding: 10px;
-    margin: none;
-    background: #f39500;
-    position: absolute;
-    bottom: 4px;
-    left: 0px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 1px rgba(0, 0, 0, 0.4);
-  }
   button:focus {outline:0;}
-}
-
-.card-presta:hover {
-  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
 }
 
 .cover-img {
   position: absolute;
   top: 0px;
-  bottom: 0px;
+  bottom: 30px;
   left: 0px;
   right: 0px;
-  background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   button {
     background-color: transparent;
     border: none;
@@ -102,17 +54,19 @@
   }
 }
 
-.cover-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.card-presta-elements {
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  font-weight: bolder;
+  opacity: .6;
 }
 
 .modal-content {
   padding: 40px;
-  border-radius: 2px;
   position: relative;
   padding-top: 100px;
+  border: 8px solid #e8ecf0;
   h4 {
     position: absolute;
     top: 20px;
@@ -153,6 +107,32 @@
   }
 }
 
-a {
-  text-decoration: none;
+.map-container {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   height: 200px;
+}
+
+#text-map {
+  position: absolute;
+  width: 715px;
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+
+@media screen and (max-width: 752px) {
+  .map-container img {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #text-map {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 100%;
+  text-align: center;
+  }
 }

@@ -1,18 +1,17 @@
-
 <h2 class="title-top text-center">Nos prestations</h2>
 <div class="wrapper" style="background: #f9f9f9">
   <div class="container">
     <div class="row">
       <div class="col-md-4 text-center">
-        <div class="card">
+        <div class="card-presta-description">
           <%= image_tag 'icons1.png'%>
           <h5>DEVIS <br> SUR-MESURE</h5>
           <p>SOUS <br> 24H</p>
-          <p class="text1">Pour chaque demande, nous prendrons en comptes toutes vos exigences et nous y adapterons (Budget, lieux, restriction alimentaires...). N’hésitez pas à nous transmettre toutes les informations par mail, une réponse vous sera donnée dans la demi journée avec un devis chiffré.</p>
+          <p>Pour chaque demande, nous prendrons en comptes toutes vos exigences et nous y adapterons (Budget, lieux, restriction alimentaires...). N’hésitez pas à nous transmettre toutes les informations par mail, une réponse vous sera donnée dans la demi journée avec un devis chiffré.</p>
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <div class="card">
+        <div class="card-presta-description">
           <%= image_tag 'icons2.png'%>
           <h5>LIVRAISON <br> CLEF-EN-MAIN</h5>
           <p>(TOUT EST PRÉVU, DES GOBELETS <br> AU TIRE -BOUCHON ETC.)</p>
@@ -20,7 +19,7 @@
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <div class="card">
+        <div class="card-presta-description">
           <%= image_tag 'icons3.png'%>
           <h5>FLEXIBILITÉ <br> DES COMMANDES</h5>
           <p>JUSQU’À 48 HEURES <br> À L’AVANCE</p>
@@ -33,7 +32,7 @@
 </div>
 
 
-<div class="wrapper white" style="background-image: url('<%= image_path('fond1.png') %>');">
+<div class="wrapper presta-flex" style="background-image: url('<%= image_path('fond1.png') %>');">
   <div class="text-right">
     <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
     <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
@@ -47,15 +46,17 @@
 
 <h2 class="title text-center">Nos options</h2>
 <div class="wrapper" style="background: #f9f9f9">
-  <div class="wrapper" style="position: relative; padding-top: 30px; padding-bottom: 30px; background-image: url('<%= image_path('background-orange.png') %>')">
+  <div class="wrapper" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
           <div class="card-presta">
             <div class="cover-img" style="background-image: url('<%= image_path('back-petitdej.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
-                <h2 class="title-card-red">NOS PETITS DÉJEUNERS BIO</h2>
              </button>
+            </div>
+            <div class="card-presta-elements">
+              Nos Petits Déjeuners Bio
             </div>
           </div>
         </div>
@@ -63,8 +64,10 @@
           <div class="card-presta">
             <div class="cover-img" style="background-image: url('<%= image_path('back-dej.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg1">
-                <h2 class="title-card-red">NOS DÉJEUNERS</h2>
             </button>
+            </div>
+            <div class="card-presta-elements">
+              Nos Déjeuners
             </div>
           </div>
         </div>
@@ -72,23 +75,27 @@
           <div class="card-presta">
             <div class="cover-img" style="background-image: url('<%= image_path('back-cocktail.png') %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg2">
-                <h2 class="title-card-red">NOS COCKTAILS</h2>
               </button>
+            </div>
+            <div class="card-presta-elements">
+              Nos Cocktails
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="wrapper" style="position: relative; padding-top: 30px; padding-bottom: 30px; background-image: url('<%= image_path('background-pink.png') %>')">
+  <div class="wrapper" style="background-image: url('<%= image_path('background-pink.png') %>')">
       <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
           <div class="card-presta">
             <div class="cover-img" style="background-image: url('<%= image_path('back-gouter.png') %>');">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg3">
-              <h2 class="title-card-yellow">NOS GOÛTERS</h2>
               </button>
+            </div>
+            <div class="card-presta-elements">
+              Nos Gouters
             </div>
           </div>
         </div>
@@ -96,17 +103,21 @@
           <div class="card-presta">
             <div class="cover-img" style="background-image: url('<%= image_path('back-journee.png') %>');">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg4">
-            <h2 class="title-card-yellow">JOURNÉE COMPLÈTE</h2>
             </button>
+            </div>
+            <div class="card-presta-elements">
+              Nos journées complètes
             </div>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= image_path('banner2.png') %>');">
+            <div class="cover-img" style="background-image:  url('<%= image_path('banner2.png') %>');">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg5">
-            <h2 class="title-card-yellow">TOUTES NOS OPTIONS</h2>
             </button>
+            </div>
+            <div class="card-presta-elements">
+              Toutes nos options
             </div>
           </div>
         </div>
@@ -119,17 +130,17 @@
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('carre.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('croissant.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Petits Déj Bio</h4>
-    <ul>
-      <li>Petites viennoiseries</li>
-      <li>Petites gourmandises (Financiers, macarons, cookies, pâtisseries et moelleux)</li>
-      <li>Des fraîcheurs (Brochettes de fruits, yaourt mueslis, compotes, fruits frais...)</li>
-      <li>Du salé (Verrines, fromages et charcuterie, pain Bio...)</li>
-      <li>Boissons fraîches et chaudes BIO</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('carre.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('croissant.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Petits Déj Bio</h4>
+      <ul>
+        <li>Petites viennoiseries</li>
+        <li>Petites gourmandises (Financiers, macarons, cookies, pâtisseries et moelleux)</li>
+        <li>Des fraîcheurs (Brochettes de fruits, yaourt mueslis, compotes, fruits frais...)</li>
+        <li>Du salé (Verrines, fromages et charcuterie, pain Bio...)</li>
+        <li>Boissons fraîches et chaudes BIO</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -138,34 +149,34 @@
 <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('carrerouge.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('baguette.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Nos déjeuners</h4>
-    <ul>
-      <li>Cocktail déjeunatoire</li>
-      <li>Sandwichs et quiches gourmandes</li>
-      <li>Buffets salades de saison</li>
-      <li>Desserts à l’unité, à partager ou des minis</li>
-      <li>Boissons fraiches & chaudes BIO</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('carrerouge.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('baguette.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Nos déjeuners</h4>
+      <ul>
+        <li>Cocktail déjeunatoire</li>
+        <li>Sandwichs et quiches gourmandes</li>
+        <li>Buffets salades de saison</li>
+        <li>Desserts à l’unité, à partager ou des minis</li>
+        <li>Boissons fraiches & chaudes BIO</li>
+      </ul>
     </div>
   </div>
 </div>
 <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Nos coktails</h4>
-    <ul>
-      <li>Vins et champagne de vignerons</li>
-      <li>Pièces salées</li>
-      <li>Wraps, brochettes, navettes, feuilletés, petits fours</li>
-      <li>Planches de charcuterie & fromages affinés</li>
-      <li>Terrines artisanales</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Nos coktails</h4>
+      <ul>
+        <li>Vins et champagne de vignerons</li>
+        <li>Pièces salées</li>
+        <li>Wraps, brochettes, navettes, feuilletés, petits fours</li>
+        <li>Planches de charcuterie & fromages affinés</li>
+        <li>Terrines artisanales</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -173,51 +184,51 @@
 <div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Nos gouters</h4>
-    <ul>
-      <li>Gâteu personnalisé</li>
-      <li>Crêpes</li>
-      <li>Chocolat chaud</li>
-      <li>Pâtisseries</li>
-      <li>...</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Nos gouters</h4>
+      <ul>
+        <li>Gâteu personnalisé</li>
+        <li>Crêpes</li>
+        <li>Chocolat chaud</li>
+        <li>Pâtisseries</li>
+        <li>...</li>
+      </ul>
     </div>
   </div>
 </div>
 <div class="modal fade bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Journée complète</h4>
-    <ul>
-      <li>Seminaire</li>
-      <li>team building</li>
-      <li>nappes</li>
-      <li>animation Crêpes</li>
-      <li>...</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Journée complète</h4>
+      <ul>
+        <li>Seminaire</li>
+        <li>team building</li>
+        <li>nappes</li>
+        <li>animation Crêpes</li>
+        <li>...</li>
+      </ul>
     </div>
   </div>
 </div>
 <div class="modal fade bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
-    <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
-    <h4>Toutes nos options</h4>
-    <ul>
-      <li>Vins et champagne de vignerons</li>
-      <li>Pièces salées</li>
-      <li>Wraps, brochettes, navettes, feuilletés, petits fours</li>
-      <li>Planches de charcuterie & fromages affinés</li>
-      <li>Terrines artisanales</li>
-    </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
+      <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 100px;") %>
+      <h4>Toutes nos options</h4>
+      <ul>
+        <li>Vins et champagne de vignerons</li>
+        <li>Pièces salées</li>
+        <li>Wraps, brochettes, navettes, feuilletés, petits fours</li>
+        <li>Planches de charcuterie & fromages affinés</li>
+        <li>Terrines artisanales</li>
+      </ul>
     </div>
   </div>
 </div>

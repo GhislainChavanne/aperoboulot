@@ -10,11 +10,14 @@ p, h3 h4, h5 {
   letter-spacing: 3px;
   line-height: 140%;
   font-size: 17px;
+  color: #282828;
 }
 
 h3, h4, h5 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 3px;
+  font-weight: bolder;
+  color: #282828;
 }
 
 // Paddings
@@ -50,15 +53,6 @@ h3, h4, h5 {
 .bg-dark-blue {
   background: #3b5998;
 }
-
-.white {
-  background-repeat: no-repeat;
-  background-position: 0px -15px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 
 .orange {
   background: #f39500;
@@ -127,10 +121,6 @@ h3, h4, h5 {
   width: 85%;
   }
 }
-
- body {
-    padding-top: 45px;
-  }
 
 .wrapper {
   padding-top: 40px;

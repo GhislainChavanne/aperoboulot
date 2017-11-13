@@ -3,7 +3,7 @@
   <%= image_tag('carrerouge.png', :style => "position: absolute; bottom: 100px; left: 20%; z-index: 10;") %>
   <%= image_tag('carre.png', :style => "position: absolute; bottom: 80px; left: 40%; z-index: 10;") %>
   <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 300px; left: 48%; z-index: 10;") %>
-<h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
+  <h1>C'est bon <br> C'est fais <br> Et c'est au Boulot !</h1>
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
     <div class="carousel-inner" role="listbox">
       <div class="item active" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path('banner1.png') %>');">
@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper nopadding">
   <h2 class="title">Actualités</h2>
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
@@ -25,10 +25,12 @@
           <%= link_to article_path(article) do %>
             <div class="col-md-12">
               <div class="card-actu-top">
+                <div class="card-link">
+                </div>
                 <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
                 </div>
                 <div class="card-content-top">
-                  <h4><strong><%= article.title.upcase %></strong></h4>
+                  <h4><%= article.title.upcase %></h4>
                   <p>Par <%= article.auteur  %></p>
                 </div>
                 <div class="article-bottom">
@@ -44,20 +46,22 @@
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-pink.png') %>');">
     <div class="container">
       <div class="row">
-        <% @articles.each do |article|  %>
+        <% @articles.each do |article| %>
           <%= link_to article_path(article) do %>
             <div class="col-md-4">
               <div class="card-actu">
+                <div class="card-link">
+                </div>
                 <div class="card-img" style="background-image: url('<%= cl_image_path article.photo %>')">
                 </div>
                 <div class="card-content">
-                  <h4><strong><%= article.title.upcase  %></strong>  </h4>
-                  <p>Par <%= article.auteur  %></p>
+                  <h4><%= article.title.upcase %></h4>
+                  <p>Par <%= article.auteur %></p>
                 </div>
                 <div class="article-bottom">
                     <%= image_tag('grouperouge.png') %>
                 </div>
-              </div>
+                </div>
             </div>
           <% end %>
         <% end %>
