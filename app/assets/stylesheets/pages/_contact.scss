@@ -26,6 +26,41 @@
   }
 }
 
+.title-contact {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  h2 {
+    color: #F5003E;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+
+.wrapper-form {
+  background: #e8ecf0;
+  padding: 40px;
+  padding-bottom: 130px;
+  position: relative;
+  h3 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+
 .button {
   width: 20%;
   margin: auto;
