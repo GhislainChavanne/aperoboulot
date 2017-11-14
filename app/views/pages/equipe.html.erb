@@ -22,7 +22,7 @@
     <h2 class="title">Nos valeurs</h2>
       <div class="row">
         <div class="col-md-4 col-xs-12 nopadding">
-          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(234,249,0,0.6) 0%, rgba(234,249,0,0.6) 50%), url('<%= image_path('1.png') %>');">
+          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(234,249,0,0.6) 0%, rgba(234,249,0,0.6) 50%), url('<%= cl_image_path("1_zpsmfm.png") %>');">
             <div>
               <h2 class="text-center" style="font-family: 'Kaushan Script', cursive; color: black;">Service</h2>
               <p class="text-center">un service clé-en-main pour vous <br> faciliter <br>
@@ -32,14 +32,14 @@
           </div>
         </div>
         <div class="col-md-4 col-xs-12 nopadding">
-          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 50%), url('<%= image_path('2.png') %>');">
+          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 50%), url('<%= cl_image_path("2_blfnia.png") %>');">
             <div class="card-valeurs">
               <h1>Fraîcheur <br>&<br> goût</h1>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-xs-12 nopadding">
-          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 50%), url('<%= image_path('3.png') %>');">
+          <div class="valeurs" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 50%), url('<%= cl_image_path("3_wzb3sl.png") %>');">
             <div class="card-valeurs">
               <h1>Environnement</h1>
             </div>
@@ -61,32 +61,52 @@
 
   <div class="wrapper">
     <h2 class="title">Notre équipe</h2>
-    <div class="wrapper" style="position: relative; padding-top: 30px; padding-bottom: 30px; background-image: url('<%= image_path('background-orange.png') %>')">
-      <div class="row" style="width: 70%; margin: auto;">
+    <div class="wrapper wrapper-team" style="background-image: url('<%= image_path('background-orange.png') %>')">
+      <div class="row" style="width: 80%; margin: auto;">
         <div class="col-md-4">
-          <div class="team-card" style="background-image: url('<%= image_path('logo.png')%>');">
+          <div class="team-card text-center">
+            <%= cl_image_tag("Juliette_ktzccw.jpg") %>
+            <h3>Juliette</h3>
+            <p id="quote">« Il n’y a pas de problème, il n’y a que des solutions ! »</p>
+            <p>Administratif / financier / opérationnel <br> juliette@aeproboulot.com</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="team-card" style="background-image: url('<%= image_path('logo.png')%>');">
+        <div class="col-md-4 text-center">
+          <div class="team-card">
+            <%= cl_image_tag("Charlotte_jgvljp.jpg") %>
+            <h3>Charlotte</h3>
+            <p id="quote">« C'est dans les vieux pots qu'on fait la meilleure soupe »</p>
+            <p>Commercial / opérationnel <br> charlotte@aperoboulot.com</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="team-card" style="background-image: url('<%= image_path('logo.png')%>');">
+        <div class="col-md-4 text-center">
+          <div class="team-card">
+            <%= cl_image_tag("CamilleF_pkm6so.jpg") %>
+            <h3>Camille</h3>
+            <p id="quote">« C'est dans les vieux pots qu'on fait la meilleure soupe »</p>
+            <p>Opérationnel / achats / communication <br> camille@aperoboulot.com</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="wrapper" style="position: relative; padding-top: 30px; padding-bottom: 30px; background-image: url('<%= image_path('background-orange.png') %>')">
-      <div class="row" style="width: 50%; margin: auto;">
+    <div class="wrapper wrapper-team" style="background-image: url('<%= image_path('background-orange.png') %>')">
+      <div class="row" style="width: 60%; margin: auto;">
         <div class="col-md-6">
-          <div class="team-card" style="background-image: url('<%= image_path('logo.png')%>');">
+          <div class="team-card text-center">
+            <%= cl_image_tag("CamilleC_h6culs.jpg") %>
+            <h3>Camille</h3>
+            <p id="quote">« C'est dans les vieux pots qu'on fait la meilleure soupe »</p>
+            <p>Commercial / community management <br> margaux@aperoboulot.com</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="team-card" style="background-image: url('<%= image_path('logo.png')%>');">
+          <div class="team-card text-center">
+            <%= image_tag('livreurs.png')%>
+            <h3>Et n'oublions pas <br> notre super équipe <br> de livreurs !</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
