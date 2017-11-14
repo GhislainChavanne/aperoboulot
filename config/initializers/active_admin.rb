@@ -18,7 +18,7 @@ ActiveAdmin.setup do |config|
   #
   # Note: Aim for an image that's 21px high so it fits in the header.
   #
-  # config.site_title_image = "logo.png"
+  config.site_title_image = "verrerouge.png"
 
   # == Default Namespace
   #
@@ -114,7 +114,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  # config.root_to = 'dashboard#index'
+  config.root_to = 'articles#index'
 
   # == Admin Comments
   #

@@ -1,10 +1,14 @@
 ActiveAdmin.register_page "Dashboard" do
   ActiveAdmin.register Article do
-  menu label: "Les articles Apéro-Boulot"
+  menu label: "Les articles d'Apéro Boulot"
 end
 
-action_item do
-  link_to 'Site Web', root_path, target: "_blank"
+action_item :view_site do
+  link_to "SITE", "/"
+end
+
+action_item :view_site do
+  link_to "BLOG", "/articles"
 end
 
   menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }

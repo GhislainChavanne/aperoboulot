@@ -1,7 +1,7 @@
 ActiveAdmin.register Article do
   permit_params :title, :description, :category, :content, :auteur, :photo, :photo_cache
 
-  menu label: "1. ACTUS"
+  menu label: "Les Artualités"
 
   index do
     selectable_column
@@ -23,6 +23,14 @@ ActiveAdmin.register Article do
       f.input :content
     end
     f.submit
+  end
+
+  action_item :view_site do
+    link_to "SITE", "/"
+  end
+
+  action_item :view_site do
+    link_to "BLOG", "/articles"
   end
 end
 
