@@ -1,24 +1,26 @@
+<h2 class="title-top">Nos actualités</h2>
+<div class="wrapper">
   <div class="container">
-    <h2 class="title-top text-center">Nos actus</h2>
-  <div class="row">
-    <% @articles.each do |article|  %>
-    <%= link_to article_path(article) do %>
-      <div class="col-md-4">
-        <div class="card-actu">
-        <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-        url('<%= cl_image_path article.photo %>')">
+    <div class="row">
+      <% @articles.each do |article|  %>
+      <%= link_to article_path(article) do %>
+        <div class="col-md-4">
+          <div class="card-actu">
+          <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+          url('<%= cl_image_path article.photo %>')">
+          </div>
+          <div class="card-content">
+          <h4><strong><%= article.title.upcase  %></strong>  </h4>
+          <p>Par <%= article.auteur  %></p>
+          </div>
+          <div class="article-bottom">
+            <%= image_tag('grouperouge.png') %>
+          </div>
+          </div>
         </div>
-        <div class="card-content">
-        <h4><strong><%= article.title.upcase  %></strong>  </h4>
-        <p>Par <%= article.auteur  %></p>
-        </div>
-        <div class="article-bottom">
-          <%= image_tag('grouperouge.png') %>
-        </div>
-        </div>
-      </div>
-    <% end %>
-    <% end %>
+      <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 
