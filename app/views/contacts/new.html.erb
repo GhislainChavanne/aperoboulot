@@ -1,8 +1,6 @@
 
-<h2 class="title-top">Nous contacter</h2>
+<h2 class="title-top">Demande de devis</h2>
 <div class="wrapper wrapper-form">
-  <h3>ADRESSE</h3>
-  <p>46 rue Monsieur Le Prince, 75006 Paris</p>
   <div class="title-contact">
     <h2>Formulaire de demander <br> de devis en ligne</h2>
     <%= image_tag('croissant.png', :class => "fadeIn") %>
@@ -18,7 +16,7 @@
         </div>
         <div class="col-md-6">
           <%= f.input :date, :required => true, :placeholder=> "Date" %>
-          <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners Bio", "Déjeuner", "Cocktails", "Goûter", "Journée complète"]), :class => 'genForm_dropBox' %>
+          <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners Bio", "Déjeuner", "Cocktails", "Goûter", "Journée complète", "Autre"]), :class => 'genForm_dropBox' %>
           <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
           <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
         </div>

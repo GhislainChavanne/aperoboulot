@@ -31,21 +31,42 @@
 .navbar-wagon-right {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 20%;
-  background-color: #F14D4D;
+  justify-content: flex-end;
+  width: 30%;
   padding: 10px;
   margin-top: 57px;
-  border: 1px solid white;
-  border-radius: 5px;
   margin-right: 15px;
+  a {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #F14D4D;
+    padding: 10px;
+    background-color: #F14D4D;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+  }
 }
 
 .navbar-wagon-left {
   display: flex;
   align-items: center;
-  width: 20%;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 57px;
   margin-left: 15px;
+  a {
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    background-color: #F14D4D;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* Navbar item */
