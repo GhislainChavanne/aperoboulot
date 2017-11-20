@@ -21,7 +21,7 @@
 
 /* Navbar logo */
 .navbar-wagon-brand img {
-  width: 130px;
+  width: 120px;
   margin-top: 45px;
   border-radius: 50%;
   box-shadow: 0 1px 0px 0px rgba(53, 53, 53, 0.36);
@@ -41,13 +41,19 @@
     border-radius: 5px;
     background-color: #F14D4D;
     padding: 10px;
-    background-color: #F14D4D;
     margin-right: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: white;
+    border: 2px solid #F14D4D;
+    color: #F14D4D;
   }
 }
+
 
 .navbar-wagon-left {
   display: flex;
@@ -62,10 +68,15 @@
     padding: 10px;
     background-color: #F14D4D;
     margin-right: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
     text-decoration: none;
+  }
+  a:hover {
+    background-color: white;
+    border: 2px solid #F14D4D;
+    color: #F14D4D;
   }
 }
 
