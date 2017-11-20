@@ -109,6 +109,33 @@
   padding: 20px;
 }
 
+
+@media screen and (max-width: 700px) {
+  .card-actu-top {
+  flex-flow: column;
+  align-items: left;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-img-top {
+  height: 200px;
+  background-position: center;
+  background-size: cover !important;
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-content-top {
+  padding: 12px;
+  height: 150px;
+  h4 {
+    font-weight: bold;
+  }
+  }
+}
+
 .card-actu {
   width: 100%;
   margin: auto;
@@ -153,7 +180,7 @@
 .btn-all-articles {
   padding: 10px;
   margin-bottom: 40px;
-  width: 40%;
+  display: inline-block;
   border: 8px solid #e8ecf0;
   margin: auto;
   background: white;
@@ -166,13 +193,6 @@
 .btn-all-articles:hover {
   background: #F14D4D;
   color: white;
-}
-
-
-@media screen and (max-width: 600px) {
-  .btn-all-articles {
-  width: 90%;
-  }
 }
 
 .card-link {
