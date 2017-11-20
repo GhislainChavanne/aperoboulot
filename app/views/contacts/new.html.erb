@@ -21,16 +21,14 @@
           <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
         </div>
         <div class="col-xs-12">
-          <div class="message">
           <%= f.input :message, :as => :text, :required => true, :placeholder=> "Votre message" %>
-          </div>
         </div>
         <div class= "hidden">
           <%= f.input :nickname, :hint => 'Leave this field blank!' %>
         </div>
-        <div class="col-xs-12">
-          <div class="button">
-            <%= f.button :submit, 'Envoyer', :class=> "btn btn-primary text-center" %>
+        <div class="col-xs-12 text-center">
+          <div class="width-button">
+            <%= f.button :submit, 'Envoyer', :class=> "btn" %>
           </div>
         </div>
       </div>
