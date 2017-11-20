@@ -30,7 +30,7 @@
                 <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
                 </div>
                 <div class="card-content-top">
-                  <h4><%= article.title.upcase %></h4>
+                  <h4><%= article.title.upcase.tr('æ-ý','Æ-Ý') %></h4>
                   <p>Par <%= article.auteur  %></p>
                 </div>
                 <div class="article-bottom">
@@ -55,7 +55,7 @@
                 <div class="card-img" style="background-image: url('<%= cl_image_path article.photo %>')">
                 </div>
                 <div class="card-content">
-                  <h4><%= article.title.upcase %></h4>
+                  <h4><%= article.title.upcase.tr('æ-ý','Æ-Ý') %></h4>
                   <p>Par <%= article.auteur %></p>
                 </div>
                 <div class="article-bottom">

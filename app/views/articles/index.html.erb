@@ -10,7 +10,7 @@
           url('<%= cl_image_path article.photo %>')">
           </div>
           <div class="card-content">
-          <h4><strong><%= article.title.upcase  %></strong>  </h4>
+          <h4><strong><%= article.title.upcase.tr('æ-ý','Æ-Ý') %></strong>  </h4>
           <p>Par <%= article.auteur  %></p>
           </div>
           <div class="article-bottom">
