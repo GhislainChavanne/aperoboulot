@@ -64,6 +64,9 @@
     margin: auto;
     font-family: 'Josefin Sans', sans-serif;
   }
+  label {
+    display: none;
+  }
   input:focus {
     outline: none !important;
     border: 3px solid #fc9b00;
