@@ -17,7 +17,7 @@
 </div>
 
 <div class="wrapper nopadding">
-  <h2 class="title">Actualités</h2>
+  <h2 class="title">Notre Offre du Moment</h2>
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
       <div class="row">
@@ -37,31 +37,6 @@
                     <%= image_tag('grouperouge.png') %>
                 </div>
               </div>
-            </div>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-pink.png') %>');">
-    <div class="container">
-      <div class="row">
-        <% @articles.each do |article| %>
-          <%= link_to article_path(article) do %>
-            <div class="col-md-4">
-              <div class="card-actu">
-                <div class="card-link">
-                </div>
-                <div class="card-img" style="background-image: url('<%= cl_image_path article.photo %>')">
-                </div>
-                <div class="card-content">
-                  <h4><%= article.title.upcase.tr('æ-ý','Æ-Ý') %></h4>
-                  <p>Par <%= article.auteur %></p>
-                </div>
-                <div class="article-bottom">
-                    <%= image_tag('grouperouge.png') %>
-                </div>
-                </div>
             </div>
           <% end %>
         <% end %>
