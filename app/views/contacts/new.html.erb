@@ -14,10 +14,10 @@
           <%= f.input :societe, :required => true, :placeholder=> "Société" %>
         </div>
         <div class="col-md-6">
-          <%= f.input :date, :required => true, :placeholder=> "Date" %>
+          <%= f.input :date, :as => 'string', :required => true, :placeholder=> "Date", input_html: { class: 'datepicker' } %>
           <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
           <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
-          <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners Bio", "Déjeuner", "Cocktails", "Goûter", "Journée complète", "Autre"]), :class => 'genForm_dropBox' %>
+          <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners", "Déjeuner", "Pauses Gourmandes", "Apéro / Cotcktail", "Animations", "Autre"]), :class => 'genForm_dropBox' %>
         </div>
         <div class="col-xs-12">
           <%= f.input :message, :as => :text, :required => true, :placeholder=> "Votre message" %>

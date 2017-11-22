@@ -22,6 +22,7 @@ gem 'autoprefixer-rails'
 gem 'mail_form'
 gem 'activeadmin', '1.0.0'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'bootstrap-datepicker-rails'
 
 group :development, :test do
   gem 'binding_of_caller'
