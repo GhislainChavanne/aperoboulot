@@ -32,11 +32,13 @@
 
 
 <div class="wrapper presta-flex" style="background-image: url('<%= cl_image_path("fond1_dhtosv.png") %>');">
+  <div class="background-responsive"></div>
   <div class="text-right">
     <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
     <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
     <h2>Un thème chaque mois <br> pour épater vos équipes et Clients</h2>
     <p>Il y a toujours une raison de se retrouver autour d’un « Apero Boulot » ! Tous les mois recevez une proposition originale pour vos événements en entreprise. Et parce que le plaisir de déguster commence par la vue d’un beau buffet, une décoration en adéquation avec le thème vous sera également proposée.</p>
+  <%= link_to "L'OFFRE DU MOMENT", articles_path  %>
   </div>
 </div>
 
