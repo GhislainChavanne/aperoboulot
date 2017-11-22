@@ -3,25 +3,28 @@
 <% content_for :meta_image, cloudinary_url(@article.photo.path) %>
 
 <div class="wrapper" style="background: #f8f8f8;">
- <div class="container" style="margin-top: 100px;">
+ <div class="container" style="margin-top: 60px;">
     <div class="article-title">
       <h1><%= @article.title  %></h1>
     </div>
     <div class="row">
-    <div class="col-md-4">
-      <div class="article-img" style="background-image: url('<%= cl_image_path @article.photo %>')">
-      </div>
-    </div>
     <div class="col-md-8">
       <div class="background-article">
         <div class="content-article">
-          <p id="quote"><strong><%= @article.description.html_safe %></strong></p>
+          <p><strong><%= @article.description.html_safe %></strong></p>
           <p><%= @article.content.html_safe %></p>
-          <p style="margin-top: 30px; font-weight: bolder; font-style: underline;">Par <%= @article.auteur  %></p>
         </div>
       </div>
+    </div>
+    <div class="col-md-4">
+      <div class="background-article">
+        <div class="content-article">
+          <p><strong>L'offre du moment vous intéresse?<br>Écrivez nous ici ! </strong></p>
+          <a href="mailto:charlotte@aperoboulot.com?subject=Demande Offre Du Moment">Nous écrire</a>
+        </div>
+      </div>
+      <div class="article-img" style="background-image: url('<%= cl_image_path @article.photo %>')"></div>
     </div>
   </div>
  </div>
 </div>
-
