@@ -34,7 +34,6 @@
 
 .form-horizontal {
   margin-top: 20px;
-  position: relative;
   input {
     width: 90%;
     margin: auto;
@@ -126,6 +125,10 @@
   position: absolute;
   top: -30px;
   right: 0;
+}
+
+.datepicker {
+  margin-top: 150px;
 }
 
 
