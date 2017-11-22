@@ -16,6 +16,21 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .carousel_wrapper h1 {
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel_wrapper h1 {
+  font-size: 40px;
+  top: 40vh;
+  }
+}
+
 .carousel {
   width: 100%;
   align-items: center;

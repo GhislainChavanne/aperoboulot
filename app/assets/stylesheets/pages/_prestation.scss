@@ -98,31 +98,37 @@
 }
 
 .map-container {
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   height: 200px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  h2 {
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+  }
+  img {
+    width: 400px;
+  }
 }
 
-#text-map {
-  position: absolute;
-  width: 715px;
-  font-family: 'Kaushan Script', cursive;
-  color: black;
-}
 
-
-@media screen and (max-width: 752px) {
+@media screen and (max-width: 880px) {
   .map-container img {
-  display: none;
+  width: 300px;
   }
 }
 
-@media screen and (max-width: 752px) {
-  #text-map {
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 100%;
-  text-align: center;
+@media screen and (max-width: 710px) {
+  .map-container {
+  flex-flow: column;
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  img {
+    margin: auto;
+    width: 200px;
+  }
   }
 }
+
