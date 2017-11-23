@@ -1,10 +1,12 @@
-<h2>Forgot your password?</h2>
+<div class="wrapper" style="margin-top: 80px;">
+  <div class="container login-form">
+<h2 class="title">Forgot your password?</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :email, required: true, placeholder: "entres ton mail", autofocus: true %>
   </div>
 
   <div class="form-actions">
@@ -13,3 +15,6 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+  </div>
+</div>
+
