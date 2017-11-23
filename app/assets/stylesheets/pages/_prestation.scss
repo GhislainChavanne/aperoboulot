@@ -58,10 +58,22 @@
 
 .card-presta-elements {
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: 8px;
+  right: 8px;
   font-weight: bolder;
   opacity: .6;
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    margin: 0px;
+    letter-spacing: 1px;
+    padding: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: #fc9b00;
+  }
 }
 
 .modal-content {

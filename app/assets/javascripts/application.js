@@ -6,7 +6,9 @@
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr.js
 
 $('.carousel').carousel();
-$('.datepicker').datepicker();
+$('.datepicker').datepicker({
+    format: 'dd/mm/yyyy'
+ });
 
 $('.datepicker').datepicker().on('changeDate', function(ev) {
     $(this).datepicker('hide');
