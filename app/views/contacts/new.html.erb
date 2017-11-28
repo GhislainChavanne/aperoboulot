@@ -8,18 +8,40 @@
     <div class="container" style="width: 100%;">
       <div class="row">
         <div class="col-md-6">
-          <%= f.input :nom, :required => true, :placeholder=> "Nom" %>
-          <%= f.input :prenom, :required => true, :placeholder=> "Prénom" %>
-          <%= f.input :email, :required => true, :placeholder=> "Email" %>
-          <%= f.input :societe, :required => true, :placeholder=> "Société" %>
+          <div class="form-details">
+            <%= f.input :nom, :required => true, :placeholder=> "Nom" %>
+            <p>*</p>
+          </div>
+          <div class="form-details">
+            <%= f.input :prenom, :required => true, :placeholder=> "Prénom" %>
+            <p>*</p>
+          </div>
+          <div class="form-details">
+            <%= f.input :email, :required => true, :placeholder=> "Email" %>
+            <p>*</p>
+          </div>
+          <div class="form-details">
+            <%= f.input :societe, :required => true, :placeholder=> "Société" %>
+            <p>*</p>
+          </div>
         </div>
         <div class="col-md-6">
-          <div style="position: relative;">
+          <div class="form-details">
             <%= f.input :date, :as => 'string', :required => true, :placeholder=> "Date", input_html: { class: 'datepicker', style: 'padding: 10px;' } %>
+            <p>*</p>
           </div>
-          <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
-          <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
-          <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners", "Déjeuner", "Pauses Gourmandes", "Apéro / Cotcktail", "Animations", "Autre"]), :class => 'genForm_dropBox' %>
+          <div class="form-details">
+            <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
+            <p>*</p>
+          </div>
+          <div class="form-details">
+            <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
+            <p>*</p>
+          </div>
+          <div class="form-details">
+            <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit déjeuners", "Déjeuner", "Pauses Gourmandes", "Apéro / Cotcktail", "Animations", "Autre"]), :class => 'genForm_dropBox' %>
+            <p>*</p>
+          </div>
         </div>
         <div class="col-xs-12">
           <%= f.input :message, :as => :text, :required => true, :placeholder=> "Votre message" %>
