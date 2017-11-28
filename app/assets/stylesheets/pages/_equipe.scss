@@ -67,17 +67,18 @@
   }
 }
 
-.card-partenaires {
+.img-partenaires {
   width: 100%;
   height: 150px;
   background-position: center;
   background-size: cover !important;
   transition: opacity 0.4s ease;
+  border: 4px solid white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-.hover-partenaires {
+.content-partenaires {
   color: inherit;
-  background-color: white;
   padding: 20px;
   display: flex;
   align-items: center;
