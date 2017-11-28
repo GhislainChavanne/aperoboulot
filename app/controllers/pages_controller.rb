@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :equipe, :prestation, :contact ]
+  skip_before_action :authenticate_user!, only: [ :home, :equipe, :prestation, :contact, :mentions ]
 
   def home
     @article = Article.last(1).reverse
