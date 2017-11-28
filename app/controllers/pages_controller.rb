@@ -12,4 +12,7 @@ class PagesController < ApplicationController
   def prestation
   end
 
+  def mentions
+  end
+
 end

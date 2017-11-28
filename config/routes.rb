@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'equipe',  to: 'pages#equipe'
   get 'prestations',  to: 'pages#prestation'
+  get 'mentions',  to: 'pages#mentions'
   resources :articles, only: [:index, :show]
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

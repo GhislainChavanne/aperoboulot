@@ -3,9 +3,19 @@
   align-items: center;
   height: 60px;
   width: 100%;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
-.footer-content p {
-  padding: 0px;
-  margin: 0 0 0px;
+
+.container-mentions {
+  background-color: white;
+  padding: 30px;
+  margin-top: 90px;
+  border-radius: 2px;
+  border: 6px solid #fc9b00;
+  p {
+    font-family: "Open Sans", "Helvetica", "sans-serif";
+    color: inherit;
+  }
 }
