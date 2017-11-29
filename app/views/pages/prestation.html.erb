@@ -6,21 +6,21 @@
         <div class="card-presta-description">
           <%= image_tag 'icons1.png'%>
           <h5>DEVIS <br> SUR-MESURE</h5>
-          <p>Pour chaque demande, nous prendrons en compte toutes vos exigences et nous y adapterons (budget, lieux, restrictions alimentaires…)</p>
+          <p>Pour chaque demande, <span style="font-weight: bold;">nous prendrons en compte toutes vos exigences</span> et nous y adapterons (budget, lieux, restrictions alimentaires…)</p>
         </div>
       </div>
       <div class="col-md-4 text-center">
         <div class="card-presta-description">
           <%= image_tag 'icons2.png'%>
           <h5>LIVRAISON <br> CLEF-EN-MAIN</h5>
-          <p>Nous ne nous arrêtons pas à l’entrée de vos locaux ! Votre commande est installée dans le lieu de votre choix, vous n’aurez plus qu’à profiter et accueillir vos invités !</p>
+          <p>Nous ne nous arrêtons pas à l’entrée de vos locaux ! <span style="font-weight: bold;">Votre commande est installée dans le lieu de votre choix</span>, vous n’aurez plus qu’à profiter et accueillir vos invités !</p>
         </div>
       </div>
       <div class="col-md-4 text-center">
         <div class="card-presta-description">
           <%= image_tag 'icons3.png'%>
           <h5>FLEXIBILITÉ <br> DES COMMANDES</h5>
-          <p>Une signature de dernière minute avec un client ? Un petit déjeuner d’équipe pour rebooster tout le monde ? Nous assurons vos événements jusqu’à 48 heures à l’avance !</p>
+          <p>Une signature de dernière minute avec un client ? Un petit déjeuner d’équipe pour rebooster tout le monde ? <span style="font-weight: bold;">Nous assurons vos événements jusqu’à 48 heures à l’avance !</span></p>
         </div>
       </div>
     </div>
@@ -33,15 +33,15 @@
   <div class="text-right">
     <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
     <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
-    <h2>Un thème chaque mois <br> pour épater vos équipes et Clients</h2>
+    <h2>Un thème chaque mois <br> pour épater vos équipes et clients</h2>
     <p>Il y a toujours une raison de se retrouver autour d’un « Apero Boulot » ! Tous les mois recevez une proposition originale pour vos événements en entreprise. Et parce que le plaisir de déguster commence par la vue d’un beau buffet, une décoration en adéquation avec le thème vous sera également proposée.</p>
-  <%= link_to "L'OFFRE DU MOMENT", articles_path  %>
+  <%= link_to "L'offre du moment", articles_path  %>
   </div>
 </div>
 
 
 
-<h2 class="title text-center">Nos prestations</h2>
+<h2 class="title text-center" id="prestations">Nos prestations</h2>
 <div class="wrapper" style="background: #f9f9f9">
   <div class="wrapper" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
@@ -53,7 +53,7 @@
              </button>
             </div>
             <div class="card-presta-elements">
-              <h4>Petits Déjeuners</h4>
+              <h4>Petits déjeuners</h4>
               <a href="contacts">
               <i class="fa fa-plus-square" aria-hidden="true"></i>
               </a>
@@ -76,7 +76,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-pause_sv58y5.png") %>');">
+            <div class="cover-img" style="background-image: url('<%= cl_image_path("pause_ajnjgk.png") %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg2">
               </button>
             </div>
@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-cocktail_ohwusw.png") %>');">
+            <div class="cover-img" style="background-image: url('<%= cl_image_path("apero-back_v3ivjr.png") %>')">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg3">
               </button>
             </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-anim_aegsjk.png") %>');">
+            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-anim_aegsjk.png") %>');background-size: 140%">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg4">
             </button>
             </div>
@@ -124,7 +124,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image:  url('<%= cl_image_path("back-options_rurszi.png") %>');">
+            <div class="cover-img" style="background-image:  url('<%= image_path("partenaire2.png") %>');">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg5">
             </button>
             </div>
@@ -150,7 +150,7 @@
       <%= image_tag('croissant.png', :style => "position: absolute; bottom: 40px; right: 30px;") %>
       <h4>Petits déjeuners</h4>
       <ul>
-        <li>Petites viennoiseries</li>
+        <li>Petites viennoiseries bio</li>
         <li>Gourmandises</li>
         <li>Fraîcheurs</li>
         <li>Pièces salées</li>
@@ -258,8 +258,11 @@
 <div class="wrapper orange">
   <div class="container">
     <div class="map-container">
+      <div>
       <h2>nos zones de livraison : <br>
       Paris intramuros et petite couronne</h2>
+      <h4>livraisons du lundi au vendredi, de 07h30 à 20h30</h4>
+      </div>
       <%= image_tag('map.png', class: 'img2') %>
     </div>
   </div>

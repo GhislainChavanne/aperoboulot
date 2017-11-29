@@ -7,7 +7,7 @@ class Contact < MailForm::Base
   attribute :date,      :validate => true
   attribute :type,      :validate => true
   attribute :nombre,      :validate => true
-  attribute :budget,      :validate => true
+  attribute :budget
   attribute :message,     :validate => true
   attribute :nickname,  :captcha  => true
 

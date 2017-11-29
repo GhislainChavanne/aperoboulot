@@ -34,12 +34,9 @@
             <%= f.input :nombre, :required => true, :placeholder=> "Nombre de participants" %>
             <p>*</p>
           </div>
-          <div class="form-details">
             <%= f.input :budget, :required => true, :placeholder=> "Budget" %>
-            <p>*</p>
-          </div>
           <div class="form-details">
-            <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit-déjeuner", "Déjeuner", "Pause Gourmande", "Apéro / Cocktail", "Animations", "Autre"]), :class => 'genForm_dropBox' %>
+            <%= f.select :type, options_for_select([["Votre prestation", ""], "Petit-déjeuner", "Déjeuner", "Pause Gourmande", "Apéro / Cocktail", "Animation", "Autre"]), :class => 'genForm_dropBox' %>
             <p>*</p>
           </div>
         </div>
