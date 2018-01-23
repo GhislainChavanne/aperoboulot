@@ -1,9 +1,10 @@
 <div class="carousel_wrapper" style="position: relative; border-bottom: 15px solid #e8ecf0;">
   <%= image_tag('carre.png', :style => "position: absolute; top: 150px; left: 15%; z-index: 10;") %>
   <%= image_tag('carrerouge.png', :style => "position: absolute; bottom: 100px; left: 20%; z-index: 10;") %>
-  <%= image_tag('carre.png', :style => "position: absolute; bottom: 80px; left: 40%; z-index: 10;") %>
+  <%= image_tag('carre.png', :style => "position: absolute; bottom: 100px; left: 40%; z-index: 10;") %>
   <%= image_tag('verrerouge.png', :style => "position: absolute; top: 170px; left: 48%; z-index: 10;") %>
   <h1>C'est bon <br> C'est frais <br> Et c'est au Boulot !</h1>
+    <h5>Le traiteur des entreprises parisiennes</h5>
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
     <div class="carousel-inner" role="listbox">
       <div class="item active" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.3) 0%, rgba(0,36,61,0.4) 50%), url('<%= cl_image_path("banner1_qd9peo.png") %>');">
@@ -17,7 +18,6 @@
 </div>
 
 <div class="wrapper nopadding">
-  <h5 class="accroche"><strong>Apero Boulot</strong> est un traiteur novateur qui propose un service clé-en-main de livraison et d’installation pour les événements d’entreprise à Paris. Ses prestations s’inscrivent à mi-chemin entre celles d’un traiteur traditionnel et des entreprises de livraisons de repas en entreprise.</h5>
   <h2 class="title text-center">Notre offre du moment</h2>
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
