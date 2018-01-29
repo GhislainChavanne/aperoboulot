@@ -1,9 +1,9 @@
 <div class="container" style="margin-top: 150px; margin-bottom: 70px;">
-  <h5 style="font-size: 30px; text-align: center;">Apero Boulot est un traiteur qui propose un service de livraison et d'installation pour tous les événements d'entreprises à Paris.</h5>
+  <h5 style="font-size: 30px; text-align: center;">Apero Boulot est un traiteur qui propose un service de livraison et d'installation pour tous les événements d'entreprises.</h5>
 </div>
 
 <h2 class="title text-center">Nos services</h2>
-<div class="wrapper" style="background: #f9f9f9">
+<div class="wrapper">
   <div class="container">
     <div class="row">
       <div class="col-md-4 text-center">
@@ -16,7 +16,7 @@
       <div class="col-md-4 text-center">
         <div class="card-presta-description">
           <%= image_tag 'icons2.png'%>
-          <h5>LIVRAISON / INSTALLATION <br> CLEF-EN-MAIN</h5>
+          <h5>LIVRAISON / CLEF-EN-MAIN <br>ET INSTALLATION </h5>
           <p>Nous ne nous arrêtons pas à l’entrée de vos locaux ! <span style="font-weight: bold;">Votre commande est installée dans le lieu de votre choix</span>, vous n’aurez plus qu’à profiter et accueillir vos invités !</p>
         </div>
       </div>
@@ -30,20 +30,6 @@
     </div>
   </div>
 </div>
-
-
-<div class="wrapper presta-flex" style="background-image: url('<%= cl_image_path("fond1_dhtosv.png") %>');">
-  <div class="background-responsive"></div>
-  <div class="text-right">
-    <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
-    <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
-    <h3>Un thème chaque mois <br> pour épater vos équipes et clients</h3>
-    <p>Il y a toujours une raison de se retrouver autour d’un « Apero Boulot » ! Tous les mois recevez une proposition originale pour vos événements en entreprise. Et parce que le plaisir de déguster commence par la vue d’un beau buffet, une décoration en adéquation avec le thème vous sera également proposée.</p>
-  <%= link_to "L'offre du moment", articles_path  %>
-  </div>
-</div>
-
-
 
 <h2 class="title text-center" id="prestations">Nos prestations</h2>
 <div class="wrapper" style="background: #f9f9f9">
@@ -133,7 +119,7 @@
             </button>
             </div>
             <div class="card-presta-elements">
-              <h4 style="font-size: 15px;">Nos services supplémentaires</h4>
+              <h4>Boissons</h4>
               <a href="contacts">
               <i class="fa fa-plus-square" aria-hidden="true"></i>
               </a>
@@ -145,7 +131,6 @@
   </div>
 </div>
 
-
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -154,18 +139,16 @@
       <%= image_tag('croissant.png', :style => "position: absolute; bottom: 40px; right: 30px;") %>
       <h4>Petits déjeuners</h4>
       <ul>
-        <li>Petites viennoiseries bio</li>
-        <li>Gourmandises</li>
-        <li>Fraîcheurs</li>
-        <li>Pièces salées</li>
+        <li>Viennoiseries (classiques, petites, chouquettes...)</li>
+        <li>Gourmandises (financiers, cannelés, moelleux...)</li>
+        <li>Fraîcheurs (brochettes de fruits de saison, yaourts fermiers...)</li>
+        <li>Pièces salées (mini sandwichs, navettes briochées...)</li>
         <li>Boissons fraîches et chaudes</li>
       </ul>
       <h5>Pour plus d'informations, rendez-vous sur notre <a href="/contacts">formulaire de contact</a></h5>
     </div>
   </div>
 </div>
-
-
 <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -175,7 +158,7 @@
       <h4>Déjeuners</h4>
       <ul>
         <li>Cocktails déjeunatoires</li>
-        <li>Plateaux repas</li>
+        <li>Box Repas</li>
         <li>Plateaux de fromages affinés</li>
         <li>Pièces sucrées</li>
         <li>Boissons fraîches et chaudes</li>
@@ -192,8 +175,8 @@
       <%= image_tag('verrerouge.png', :style => "position: absolute; bottom: 40px; right: 30px;") %>
       <h4>Pauses Gourmandes</h4>
       <ul>
-        <li>Gourmandises</li>
-        <li>Fraîcheurs</li>
+        <li>Gourmandises (financiers, cannelés, moelleux...)</li>
+        <li>Fraîcheurs (brochettes de fruits de saison, yaourts fermiers...)</li>
         <li>Gâteaux personnalisés</li>
         <li>Jus de fruits frais</li>
         <li>Boissons chaudes</li>
@@ -233,6 +216,7 @@
         <li>Plancha</li>
         <li>Crêpes à la demande</li>
         <li>Cocktails</li>
+        <li>Raclette</li>
         <li>Ou toute autre idée !</li>
       </ul>
       <h5>Pour plus d'informations, rendez-vous sur notre <a href="/contacts">formulaire de contact</a></h5>
@@ -245,13 +229,12 @@
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
       <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
       <%= image_tag('groupejaune.png', :style => "position: absolute; bottom: 40px; right: 30px;") %>
-      <h4>Options</h4>
+      <h4>boissons</h4>
       <ul>
-        <li>Verrerie</li>
-        <li>Vaisselle</li>
-        <li>Nappage</li>
-        <li>Service</li>
-        <li>Présentation sur ardoise</li>
+        <li>Jus de fruits frais et jus artisanaux</li>
+        <li>Thermos de café et de thé</li>
+        <li>Vins et champagnes de petits producteurs</li>
+        <li>Bières et cidres artisanaux</li>
       </ul>
       <h5>Pour plus d'informations, rendez-vous sur notre <a href="/contacts">formulaire de contact</a></h5>
     </div>
@@ -259,11 +242,22 @@
 </div>
 </div>
 
+<div class="wrapper presta-flex" style="background-image: url('<%= cl_image_path("fond1_dhtosv.png") %>');">
+  <div class="background-responsive"></div>
+  <div class="text-right">
+    <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
+    <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
+    <h3>Un thè̀me chaque mois <br> pour épater vos équipes et clients</h3>
+    <p>Il y a toujours une raison de se retrouver autour d’un « Apero Boulot » ! Tous les mois recevez une proposition originale pour vos événements en entreprise. <br><br> Découvrez notre offre du moment ou demandez votre <a href="/contacts">devis personnalisé</a> </p>
+  <%= link_to "L'offre du moment", articles_path, class: "offre" %>
+  </div>
+</div>
+
 <div class="wrapper orange">
   <div class="container">
     <div class="map-container">
       <div>
-      <h2>nos zones de livraison : <br>
+      <h2>Nos zones de livraison : <br>
       Paris intramuros et petite couronne</h2>
       <h4>livraisons du lundi au vendredi, de 07h30 à 20h30</h4>
       </div>
@@ -271,8 +265,4 @@
     </div>
   </div>
 </div>
-
-
-
-
 

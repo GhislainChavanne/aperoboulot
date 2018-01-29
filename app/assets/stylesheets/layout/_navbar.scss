@@ -63,7 +63,7 @@
   width: 30%;
   margin-top: 57px;
   margin-left: 15px;
-  a {
+  a, button {
     color: white;
     font-size: 13px;
     padding: 10px;
@@ -74,10 +74,13 @@
     color: white;
     text-decoration: none;
   }
-  a:hover {
+  a:hover, button:hover {
     background-color: white;
     border: 2px solid #F14D4D;
     color: #F14D4D;
+  }
+  button:focus {
+    outline: none;
   }
 }
 
@@ -166,4 +169,20 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.small-modal {
+  padding: 10px;
+  position: relative;
+  border: 8px solid #e8ecf0;
+  background-color: white;
+  a {
+    text-decoration: none;
+    color: #282828;
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+  }
 }
