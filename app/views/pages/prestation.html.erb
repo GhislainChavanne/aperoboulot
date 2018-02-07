@@ -16,7 +16,7 @@
       <div class="col-md-4 text-center">
         <div class="card-presta-description">
           <%= image_tag 'icons2.png'%>
-          <h5>LIVRAISON / CLEF-EN-MAIN <br>ET INSTALLATION </h5>
+          <h5>LIVRAISON CLEF-EN-MAIN <br>ET INSTALLATION </h5>
           <p>Nous ne nous arrêtons pas à l’entrée de vos locaux ! <span style="font-weight: bold;">Votre commande est installée dans le lieu de votre choix</span>, vous n’aurez plus qu’à profiter et accueillir vos invités !</p>
         </div>
       </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-dej_zpb1qy.png") %>');">
+            <div class="cover-img" style="background-image: url('<%= cl_image_path("final_apero_boulot-338_c6gopz.jpg") %>');">
               <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg1">
             </button>
             </div>
@@ -100,7 +100,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image: url('<%= cl_image_path("back-anim_aegsjk.png") %>');background-size: 140%">
+            <div class="cover-img" style="background-image: url('<%= cl_image_path("final_apero_boulot-121_nupbd8.jpg") %>');background-size: 140%">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg4">
             </button>
             </div>
@@ -114,7 +114,7 @@
         </div>
         <div class="col-md-4 text-center">
           <div class="card-presta">
-            <div class="cover-img" style="background-image:  url('<%= image_path("partenaire2.png") %>');">
+            <div class="cover-img" style="background-image:  url('<%= cl_image_path("partenaire2_uyo3nk.png") %>');">
             <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg5">
             </button>
             </div>
@@ -158,7 +158,7 @@
       <h4>Déjeuners</h4>
       <ul>
         <li>Cocktails déjeunatoires</li>
-        <li>Box Repas</li>
+        <li>Box repas</li>
         <li>Plateaux de fromages affinés</li>
         <li>Pièces sucrées</li>
         <li>Boissons fraîches et chaudes</li>
@@ -229,7 +229,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 30px; color: #008489"><i class="fa fa-times" aria-hidden="true"></i></button>
       <%= image_tag('baguette.png', :style => "position: absolute; top: 10px; left: 60px;") %>
       <%= image_tag('groupejaune.png', :style => "position: absolute; bottom: 40px; right: 30px;") %>
-      <h4>boissons</h4>
+      <h4>Boissons</h4>
       <ul>
         <li>Jus de fruits frais et jus artisanaux</li>
         <li>Thermos de café et de thé</li>
@@ -245,11 +245,11 @@
 <div class="wrapper presta-flex" style="background-image: url('<%= cl_image_path("fond1_dhtosv.png") %>');">
   <div class="background-responsive"></div>
   <div class="text-right">
-    <%= image_tag('verrerouge.png', :style => "position: absolute; top: 0px; right: 60px;") %>
+    <%= image_tag('verrerouge.png', :style => "position: absolute; top: -30px; right: 60px;") %>
     <%= image_tag('croissant.png', :style => "position: absolute; bottom: 0px; right: 40px;") %>
-    <h3>Un thè̀me chaque mois <br> pour épater vos équipes et clients</h3>
+    <h3>Des recettes de saison chaque mois pour régaler vos équipes et clients</h3>
     <p>Il y a toujours une raison de se retrouver autour d’un « Apero Boulot » ! Tous les mois recevez une proposition originale pour vos événements en entreprise. <br><br> Découvrez notre offre du moment ou demandez votre <a href="/contacts">devis personnalisé</a> </p>
-  <%= link_to "L'offre du moment", articles_path, class: "offre" %>
+    <p style="margin-top: 25px;"> <%= link_to "L'offre du moment", articles_path%></p>
   </div>
 </div>
 
