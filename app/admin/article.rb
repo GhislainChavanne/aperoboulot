@@ -22,7 +22,7 @@ ActiveAdmin.register Article do
       f.input :auteur
       f.input :content
     end
-    f.submit
+    f.actions
   end
 
   action_item :view_site do
