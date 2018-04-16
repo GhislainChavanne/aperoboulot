@@ -36,10 +36,18 @@
 
 @media screen and (max-width: 600px) {
   .carousel_wrapper h1 {
-  font-size: 40px;
+  font-size: 30px;
   top: 40vh;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .carousel_wrapper h5 {
+  font-size: 16px;
+  left: 20px;
+  }
+}
+
 
 .carousel {
   width: 100%;
