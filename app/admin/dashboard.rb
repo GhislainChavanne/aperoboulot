@@ -1,7 +1,4 @@
 ActiveAdmin.register_page "Dashboard" do
-  ActiveAdmin.register Article do
-  menu label: "Les articles d'Apéro Boulot"
-end
 
 action_item :view_site do
   link_to "SITE", "/"
