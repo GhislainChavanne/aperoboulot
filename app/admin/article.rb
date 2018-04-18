@@ -1,7 +1,7 @@
 ActiveAdmin.register Article do
   permit_params :title, :description, :category, :content, :auteur, :photo, :photo_cache
+  menu label: "Les Actualités"
 
-  menu label: "Les Artualités"
 
   index do
     selectable_column

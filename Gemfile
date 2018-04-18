@@ -21,7 +21,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'mail_form'
 gem 'coffee-rails'
-gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'activeadmin', '1.0.0'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'bootstrap-datepicker-rails'
 
