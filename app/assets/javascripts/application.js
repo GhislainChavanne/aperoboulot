@@ -14,3 +14,4 @@ $('.datepicker').datepicker({
 $('.datepicker').datepicker().on('changeDate', function(ev) {
     $(this).datepicker('hide');
 });
+

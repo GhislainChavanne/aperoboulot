@@ -1,9 +1,7 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :equipe, :prestation, :contact, :mentions ]
+  skip_before_action :authenticate_user!, only: [ :home, :equipe, :prestation, :contact, :mentions, :offredumois ]
 
   def home
-    @article = Article.last(1).reverse
-    @articles = Article.order('created_at DESC').first(3).drop(1)
   end
 
   def equipe
@@ -13,6 +11,9 @@ class PagesController < ApplicationController
   end
 
   def mentions
+  end
+
+  def offredumois
   end
 
 end

@@ -22,25 +22,23 @@
   <div class="wrapper nopadding" style="background-image: url('<%= image_path('background-orange.png') %>')">
     <div class="container">
       <div class="row">
-        <% @article.each do |article|  %>
-          <%= link_to article_path(article) do %>
-            <div class="col-md-12">
-              <div class="card-actu-top">
-                <div class="card-link">
-                </div>
-                <div class="card-img-top" style="background-image: url('<%= cl_image_path article.photo %>')">
-                </div>
-                <div class="card-content-top">
-                  <h4><%= article.title.upcase.tr('æ-ý','Æ-Ý') %></h4>
-                  <p>Par <%= article.auteur  %></p>
-                </div>
-                <div class="article-bottom">
-                    <%= image_tag('grouperouge.png') %>
-                </div>
-              </div>
+        <a href="/offredumois">
+        <div class="col-md-12">
+          <div class="card-actu-top">
+            <div class="card-link">
             </div>
-          <% end %>
-        <% end %>
+            <div class="card-img-top" style="background-image: url('<%= cl_image_path("o6w7s34lctuizerif6wg.jpg") %>')">
+            </div>
+            <div class="card-content-top">
+              <h4>OFFRE DU MOIS</h4>
+              <p>Par Camille</p>
+            </div>
+            <div class="article-bottom">
+                <%= image_tag('grouperouge.png') %>
+            </div>
+          </div>
+        </div>
+        </a>
       </div>
     </div>
   </div>
