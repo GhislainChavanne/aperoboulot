@@ -32,6 +32,7 @@
   }
   .thumbnail {
     width: 150px;
+    margin: 10px;
     border: 3px solid #F14D4D;
   }
   .thumbnail:hover {
@@ -41,12 +42,20 @@
     margin-top: 30px;
     display: flex;
     flex-flow: row;
+    justify-content: flex-end;
     p {
       display: inline-block;
       color: inherit;
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .content-article .devis {
+    align-items: center;
+  }
+}
+
 
 .link-article {
   padding: 30px;
