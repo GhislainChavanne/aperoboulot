@@ -27,6 +27,13 @@
 }
 
 @media screen and (max-width: 700px) {
+  p, .text-left h3, .text-right h3 {
+  text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
   .carousel_wrapper h1 {
   text-align: center;
   left: 0px;
