@@ -5,7 +5,6 @@
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr.js
 
-$('.carousel').carousel();
 $('.datepicker').datepicker({
     format: 'dd/mm/yyyy',
     language: 'fr'
